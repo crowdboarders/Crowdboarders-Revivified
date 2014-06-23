@@ -1,0 +1,406 @@
+ * {
+   margin: 0;
+   padding: 0;
+
+   font-family: helvetica;
+   font-variant: small-caps;
+ }
+
+html {
+  background: #E9E9E9;
+}
+
+ #navbar ul {
+	margin: 0;
+	padding: 5px;
+  height: 40px;
+	list-style-type: none;
+	text-align: left;
+	background-color: #FFFFFF;
+
+	}
+
+#navbar ul li {
+  position: relative;
+	display: inline;
+	}
+
+#navbar ul li a {
+	text-decoration: none;
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 40px;
+	padding-left: 15px;
+  margin-top: 25px;
+	color: #BCC3C9;
+	background-color: #FFFFFF;
+	}
+
+#navbar ul li a:hover {
+	color: #48EAE2;
+	background-color: #fff;
+	}
+
+.col1 {
+  padding: .5em;
+  margin: .5% .3% .5% 0;
+  float:left;
+  width: 18%;
+
+  border-radius: 2px;
+
+  -webkit-box-shadow:  inset 0 0 8px rgba(150, 149, 150, 1);
+          box-shadow:  inset 0 0 8px rgba(150, 149, 150, 1);
+  box-sizing: border-box;
+  height: 565px;
+
+  background: #FBFBFB;
+}
+
+.col2 {
+  margin: .5% 0 .5% 0;
+  padding: .5em;
+  float:left;
+  width:36%;
+
+  border-radius: 2px;
+
+  -webkit-box-shadow:  inset 0 0 8px rgba(150, 149, 150, 1);
+          box-shadow:  inset 0 0 8px rgba(150, 149, 150, 1);
+  box-sizing: border-box;
+  height: 565px;
+
+  background: #FBFBFB;
+}
+
+.col3 {
+  margin: .5% 0 .5% .3%;
+  padding: 0;
+  float:left;
+  width: 45.4%;
+  box-sizing: border-box;
+  height: 565px;
+}
+.lineup{
+  padding: 15px;
+  font-size: 26px;
+  margin-bottom: .8%;
+  height:27%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  -webkit-box-shadow:  inset 0 0 8px rgba(150, 149, 150, 1);
+          box-shadow:  inset 0 0 8px rgba(150, 149, 150, 1);
+  background: #FBFBFB;
+}
+.crowdnews {
+  padding: 15px;
+  font-size: 26px;
+  height:73%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  -webkit-box-shadow:  inset 0 0 8px rgba(150, 149, 150, 1);
+          box-shadow:  inset 0 0 8px rgba(150, 149, 150, 1);
+  background: #FBFBFB;
+}
+
+.lineup a,.crowdnews a {
+  color: #75B4C6;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+
+.container {
+  clear: both;
+  width: 99%;
+  margin:auto;
+  height: 575px;
+  background: #E9E9E9;
+
+  display: table;
+
+
+}
+
+#mydistricts {
+height: 40%;
+overflow-y: scroll;
+border-radius: 2px;
+padding: 22px;
+margin: auto;
+
+box-sizing: border-box;
+}
+
+.district {
+  float: left;
+  margin: 1%;
+  border: 1px solid black;
+  width: 80px;
+  height: 95px;
+
+  text-align: center;
+  font-size:18px;
+
+  background: #FFFFFF;
+
+  box-sizing: border-box;
+  -mox-box-sizing: border-box;
+}
+
+.titles {
+  margin-top: 20px;
+  font-size: 22px;
+  line-height: 45px;
+}
+
+.DAcontent {
+
+  bottom:0;
+  margin:auto;
+
+
+}
+
+#myareas {
+  height: 40%;
+  overflow-y: scroll;
+  border-radius: 2px;
+  padding: 22px;
+
+  box-sizing: border-box;
+}
+
+.area {
+  float: left;
+  margin: 1%;
+  border: 1px solid black;
+  width: 80px;
+  height: 95px;
+
+  background: #FFFFFF;
+
+  box-sizing: border-box;
+}
+
+.command-center img {
+  width: 125px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#border-name {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+form {
+  padding-top: 10px;
+}
+
+textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  font-variant: normal;
+  padding: 5px;
+}
+
+#attach-button {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 15px 11px !important;
+  font-size: 18px !important;
+  background-color: #75B4C6;
+  color: #ffffff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #B0EDFF;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+#post-button {
+  float: right;
+  margin-top: 10px;
+  margin-right: 7px;
+  padding: 10px 15px 11px !important;
+  font-size: 18px !important;
+  background-color: #75B4C6;
+  color: #ffffff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #B0EDFF;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+#command-center-controls {
+  clear: both;
+  line-height: 1.5em;
+  font-size: 24px;
+}
+
+#command-center-controls a {
+  color: #75B4C6;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+#create-crowdboard-button {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 15px 20px 16px !important;
+  font-size: 26px !important;
+  font-family: "American Typewriter", Courier, "Courier New";
+  background-color: #FFFFFF;
+  color: #75B4C6;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #75B4C6;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+.second_block {
+  height: 400px;
+  background: #E9E9E9;
+
+}
+
+.latest-crowd-boards {
+  position: relative;
+  clear: both;
+  text-align: left;
+  font-size: 26px;
+  height: 400px;
+  padding: 20px;
+  margin: 0;
+  border-radius: 5px;
+
+  -webkit-box-shadow:  inset 0 0 8px rgba(150, 149, 150, 1);
+          box-shadow:  inset 0 0 8px rgba(150, 149, 150, 1);
+
+  background: #FBFBFB;
+
+  box-sizing: border-box;
+
+}
+
+.latest-crowd-boards img {
+  float: left;
+  width: 22%;
+  border: 2px solid blue;
+  margin: 20px 5px 0px;
+
+  box-sizing: border-box;
+}
+
+footer {
+  clear: both;
+}
+
+/* pseudo-elements
+-------------------------------------------------- */
+
+.col1:hover {
+  background-color:#FEE8DC;
+}
+
+#myareas:hover {
+  background-color: #FBFBFB;
+  border: 2px solid #72B2C7;
+}
+#mydistricts:hover {
+  background-color: #FBFBFB;
+  border: 2px solid #72B2C7;
+}
+
+.col2:hover {
+  background-color:#B9CACF;
+}
+
+#post-button:hover {
+  background-color: #3C6C79;
+}
+#attach-button:hover {
+  background-color: #3C6C79;
+}
+#create-crowdboard-button:hover {
+  background-color: #3C6C79;
+  color: #fff;
+}
+#command-center-controls a:hover {
+  color: #3C6C79;
+}
+
+.lineup:hover {
+  background-color:#72D3B3;
+}
+.crowdnews:hover {
+
+  -webkit-box-shadow:  inset 0 0 28px rgba(60, 108, 121, 1);
+          box-shadow:  inset 0 0 28px rgba(60, 108, 121, 1);
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+  *zoom:1;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+  .col1 {
+    float: none;
+    width: 100%;
+    margin: 5px auto;
+  }
+  .col2 {
+    float: none;
+    width: 100%;
+    margin: 5px auto;
+  }
+  .col3 {
+    float: none;
+    width: 100%;
+    margin: 5px auto;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1400px) {
+  .container{
+    width: 1400px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
