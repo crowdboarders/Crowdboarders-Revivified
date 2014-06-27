@@ -9,31 +9,39 @@
 <body>
   <div id="navbar">
     <ul>
-      <li><a href="#">My Console</a></li>
-      <li><a href="#">Districts</a></li>
+      <li><a class="focus" href="index.html">My Console</a></li>
+      <li><a href="#">All Districts</a></li>
       <li><a href="#">Crowd News</a></li>
+      <span id="last"><a href=""><img src="images/cogs.png" /></a></span>
+      <form method="get" action="/search" id="search">
+       <input name="q" type="text" size="40" placeholder="Search..." />
+      </form>
+        <a href=""><span>(2)</span><img src="images/crowd.png" /></a>
+        <a href=""><span>(1)</span><img src="images/email.png" /></a>
+        <a href=""><img src="images/crowdboarders2.png" /></a>
+
     </ul>
   </div>
 
   <div class="container first_block">
 
     <div class="col1">
-      <span class="titles">My Districts</span>
+      <span class="titles">My Districts </span><a href="#">Add</a>
       <div id="mydistricts">
-        <div class="district"><span class="DAcontent">Art</span></div>
-        <div class="district"><span class="DAcontent">Technology</span></div>
-        <div class="district"><span class="DAcontent">Business</span></div>
-        <div class="district"><span class="DAcontent">a</span></div>
-        <div class="district"><span class="DAcontent">a</span></div>
-        <div class="district"><span class="DAcontent">a</span></div>
-        <div class="district"><span class="DAcontent">a</span></div>
-        <div class="district"><span class="DAcontent">a</span></div>
-        <div class="district"><span class="DAcontent">a</span></div>
-        <div class="district"><span class="DAcontent">a</span></div>
-        <div class="district"><span class="DAcontent">a</span></div>
-        <div class="district"><span class="DAcontent">a</span></div>
+        <div class="district"><img src="images/art.jpeg"><span class="DAcontent">Art</span></div>
+        <div class="district"><img src="images/causes.jpg"><span class="DAcontent">Causes</span></div>
+        <div class="district"><img src="images/gaming.jpeg"><span class="DAcontent">Gaming</span></div>
+        <div class="district"><img src="images/green.jpeg"><span class="DAcontent">Green</span></div>
+        <div class="district"><img src="images/tech.jpeg"><span class="DAcontent">Tech</span></div>
+        <div class="district"><img src="images/theatre.jpeg"><span class="DAcontent">Theatre</span></div>
+        <div class="district"><img src="images/art.jpeg"><span class="DAcontent">Art</span></div>
+        <div class="district"><img src="images/causes.jpg"><span class="DAcontent">Causes</span></div>
+        <div class="district"><img src="images/gaming.jpeg"><span class="DAcontent">Gaming</span></div>
+        <div class="district"><img src="images/green.jpeg"><span class="DAcontent">Green</span></div>
+        <div class="district"><img src="images/tech.jpeg"><span class="DAcontent">Tech</span></div>
+        <div class="district"><img src="images/theatre.jpeg"><span class="DAcontent">Theatre</span></div>
       </div>
-      <span class="titles">My Areas</span>
+      <span class="titles">My Areas </span><a href="#">Join</a>
       <div id="myareas">
         <div class="area">d</div>
         <div class="area">e</div>
@@ -51,17 +59,20 @@
     </div>
 
     <div class="col2 command-center">
-      <img src="images/selfportrait.png" /><span id="border-name">Boarder #111</span></br>
+      <div class="profile-picture">
+        <img src="images/selfportrait.png" />
+      </div>
+      <div id="boarder-number">Boarder</br>#111</div>
+      <div id="boarder-name">Matthew Aurich</div>
+      <div id="profile">Profile <a href="#">View</a><a href="#">/Edit</a></div>
 
       <form>
-        <textarea rows="6" cols="50"></textarea>
+        <textarea placeholder = "Write a post to the Crowd News..."></textarea>
         <input type= "button" value="Post" id="post-button" />
-        <input type= "button" value="Attach" id="attach-button"/>
+        <input type= "button" value="Add File" id="attach-button"/>
       </form>
 
       <div id="command-center-controls">
-        <span>Districts <a href="#">Visit</a></span><br/>
-        <span>Profile <a href="#">View/Edit</a></span><br/>
         <span>Crowdboard Command <a href="#">Manage</a></span><br/>
         <span>My Boardfolio <a href="#">View</a></span><br/>
       </div>
@@ -71,16 +82,44 @@
     </div>
 
     <div class="col3">
-      <div class="lineup">Boarders Lineup <a href="#">Edit</a>
+      <div class="lineup-main">
+        <div>Boarders Lineup <a href="#">Connect</a></div>
+        <div class="lineup">
+          <div class="other-boarder-image"><img src="images/art.jpeg"><span class="other-boarder-name">Mr. Art</span></div>
+          <div class="other-boarder-image"><img src="images/causes.jpg"><span class="other-boarder-name">Mrs. Causes</span></div>
+          <div class="other-boarder-image"><img src="images/gaming.jpeg"><span class="other-boarder-name">Ms. Gaming</span></div>
+          <div class="other-boarder-image"><img src="images/green.jpeg"><span class="other-boarder-name">Sir Green</span></div>
+          <div class="other-boarder-image"><img src="images/tech.jpeg"><span class="other-boarder-name">Lord Tech</span></div>
+          <div class="other-boarder-image"><img src="images/theatre.jpeg"><span class="other-boarder-name">The Theatre</span></div>
+        </div>
       </div>
-      <div class="crowdnews">Crowd News <a href="#">View All</a>
-      </div>
-    </div>
+      <div class="crowdnews-main">Crowd News <a href="#">Latest</a>
+        <div class="crowdnews">
+          
+          <div class="crowdnews-post">
+            <div class="posted-material">
+              <img src="images/Georgie.jpg" />  
+              <div class="poster-options">
+                <a href="#"><img src="images/comment.png" /></a>
+                <a href="#"><img src="images/recommend.png" /></a>
+                <a href="#"><img src="images/boost.png" /></a>
+              </div>
+              <div class="poster-name">Matt Aurich says:</div>
+              <div class="poster-comment">Hey guys just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span>
+              </div>
+              <div class="time-stamp">06/24/2014</div>
+            </div>
+
+
+          </div>
+        </div>
+      </div> 
+         
 
   </div>
 
   <div class="container second_block">
-    <div class="latest-crowd-boards group">Latest Crowdboards</br>
+    <div class="latest-crowd-boards group">Latest Crowdboards <a href="#">View All</a></br>
       <img src="images/unity.png" />
       <img src="images/emphasis.png" />
       <img src="images/hierarchy.png" />
