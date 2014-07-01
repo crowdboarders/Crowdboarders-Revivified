@@ -66,11 +66,13 @@ html {
 }
 
 #navbar ul {
+  position::relative;
   display:table-cell;
   vertical-align: middle;
   width: 100%;
 	padding-left: 5px;
   padding-right: 5px;
+  padding-top: 10px;
   height: 48px;
 	text-align: left;
 	background-color: #3C3C3C;
@@ -82,39 +84,104 @@ html {
     text-decoration: none;
     float: right;
     padding-top: 15px;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 100;
   }
 
     #navbar ul li {
     position: relative;
     display: inline-block;
     margin-left: 15px;
+
   }
     #navbar ul li a {
     	text-decoration: none;
       font-size: 20px;
-      letter-spacing: -1px;
+      padding-bottom: 14px;
       font-weight: 100;
     	color: #fff;
       cursor: pointer;
-      padding-bottom: 15px;
+
     	}
+
+        #navbar ul ul {
+          display:none;
+          width: 100%;
+          height: 100%;
+          background: none; 
+          border-radius: 0px; 
+          padding: 0;
+          position: absolute; 
+          top: 100%;
+          right: 78px;
+        }
+        #navbar ul li:hover > ul {
+          display: block;
+
+        }
+
+          #navbar ul ul li {
+            text-align: center;
+            float: none; 
+            position: relative;
+            width: 150px;
+            background: rgba(60, 60, 60, .8);
+            color: #fff;
+            font-size: 13px;
+           
+            z-index: 100;
+            
+
+          }
+            #navbar ul ul li:last-child {
+              border-top: 1px solid #fff;
+            }
+            #navbar ul ul li a {
+              display:block;
+              background: rgba(60, 60, 60, .8);
+              width: 150px;
+              color: #fff;
+              font-size: 16px;
+              padding:10px;
+              margin:0;
+            } 
+              #navbar ul ul li a:hover {
+                background: rgba(75, 84, 95, .99);
+              }
+
   #navbar img {
     float: right;
     height: 25px;
     margin-right: 5px;
     margin-left: 20px;
+
+  }
+  #crowdboard-logo {
+    height: 30px !important;
   }
   #last {
-    margin-right: 20px !important;
+    margin-right: 25px !important;
     float:right;
+    height: 100%;
   }
+  .menu-image {
+    float:right;
+    height: 100%;
+
+    
+    
+  }
+
+  #last img {
+    height: 30px;
+  }
+
 
   #navbar form {
     display: inline-block;
     float: right;
     margin-left: 20px;
-    margin-right: 8px;
+
     padding: 0;
   }
   #search input[type="text"] {
@@ -141,7 +208,7 @@ html {
     outline:none;
     background: url('../images/search-dark.png') no-repeat 10px 6px #fcfcfc;
     color: #6a6f75;
-    width: 175px;
+    width: 185px;
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
     -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
@@ -173,7 +240,7 @@ html {
   }
     .titles {
     margin-top: 20px;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 45px;
     }  
       #mydistricts, #myareas {
@@ -239,24 +306,24 @@ html {
         border-radius: 2px;
         display: block;
         width: 125px;
-        height: 115px;
+        height: 110px;
         margin: auto;
         -webkit-box-shadow: 0 0 2px rgba(150, 149, 150, 1);
                 box-shadow: 0 0 2px rgba(150, 149, 150, 1);
       }
     #boarder-number {
       text-align: right;
-      font-size: 10px;
+      font-size: 14px;
     }
     #boarder-name {
       float: left;
-      margin-top: 44px;
-      font-size: 24px;
+      margin-top: 39px;
+      font-size: 21px;
     }
     #profile {
       float: left;
       margin-top: 15px;
-      margin-right: 50px;
+      
       font-size: 19px;
     }
     #profile a {
@@ -284,7 +351,7 @@ html {
         margin-bottom: 25px;
         margin-right: 10px;
         padding: 10px 15px 11px !important;
-        font-size: 18px !important;    
+        font-size: 16px !important;    
         font-weight: 600;
         background-color: #75B4C6;
         color: #ffffff;
@@ -304,13 +371,13 @@ html {
     #command-center-controls {
       clear: both;
       line-height: 1.75em;
-      font-size: 24px;
+      font-size: 22px;
       margin-bottom: 40px;
 
     }
       #command-center-controls a, .col1 a, .latest-crowd-boards a {
         color: #75B4C6;
-        font-size: 22px;
+        font-size: 18px;
         text-decoration: none;
       }
 
@@ -343,7 +410,7 @@ html {
   }
     .lineup-main{
       padding: 10px;
-      font-size: 26px;
+      font-size: 22px;
       margin-bottom: 1%;
       height:29%;
       border-radius: 2px;
@@ -389,7 +456,7 @@ html {
 
     .crowdnews-main {
       padding: 15px;
-      font-size: 26px;
+      font-size: 22px;
       height: 70%;
       background-color: #DCE0E0;
       border-radius: 2px;
@@ -414,7 +481,7 @@ html {
         padding: 6px;    
         background: #FFFFFF;
         width: 98%;
-        height: 160px;
+        
         text-align: left;
         font-size: 16px;
         -webkit-box-shadow: 0 0 6px rgba(150, 149, 150, 1);
@@ -425,12 +492,13 @@ html {
         height: 100%;
         width: 100%;
         background-color: #F8FCFC;
+        padding-bottom: 30px;
       }
         .crowdnews-post img {
           float: left;
           border-radius: 2px;
           margin-right: 15px;
-          height: 60px;
+          height: 65px;
           width: 90px;
           -webkit-box-shadow: 0 0 2px rgba(150, 149, 150, 1);
                   box-shadow: 0 0 2px rgba(150, 149, 150, 1);
@@ -447,21 +515,22 @@ html {
           margin: 0px 2px;
         }
         .recommend-number,.comment-number,.boost-number, .watch-number {
-          font-size: 9px;
+          font-size: 6px;
+          font-weight: 100;
           color: #fff;
           position:absolute;
         }
         .poster-options .recommend-number{
           top: 14px;
-          right: 62px;
+          right: 63px;
         }
         .poster-options .comment-number {
           top: 14px;
-          right: 121px;
+          right: 122px;
         }
         .poster-options .boost-number {
           top: 14px;
-          right: 3px;
+          right: 4px;
         }
 
         .poster-name {
@@ -471,6 +540,7 @@ html {
         }
         .poster-comment {
           padding:5px;
+          padding-top: 10px;
           width: 97.5%;
         }
         .district-tag a {
@@ -491,7 +561,7 @@ html {
 
     .lineup-main a,.crowdnews-main a {
       color: #75B4C6;
-      font-size: 22px;
+      font-size: 18px;
       text-decoration: none;
     }
 
@@ -503,10 +573,9 @@ html {
     position: relative;
     clear: both;
     text-align: left;
-    font-size: 26px;
-    height: 450px;
+    font-size: 22px;
+    
     padding: 20px;
-
     margin: 0;
     border-radius: 5px;
     -webkit-box-shadow: 0 0 6px rgba(150, 149, 150, 1);
@@ -515,32 +584,44 @@ html {
     vertical-align: center;
 
   }
-    .crowdboard-container{
+    .crowdboard-container {
       position:relative;
       float: left;
-      height: 350px;
       width: 290px;
+
       background: #fff;
-      border: 1px solid;
       margin-top: 20px;
       margin-left: .5%;
       margin-right: .5%;
       padding: 6px;
+      border-radius: 1px;
+      -webkit-box-shadow: 0 0 6px rgba(150, 149, 150, 1);
+                box-shadow: 0 0 6px rgba(150, 149, 150, 1);
     }
       .crowdboard-video {
         margin:auto;
         width: 100%;
         height: 100px;
-        border: 1px solid;
       }
       .crowdboard-video img {
         height: 100%;
         width:100%;
       }
+      .play-button {
+        position: absolute;
+        height: 55px;
+        width: 55px;
+        top: 25px;
+        right:115px;
+        margin:0;
+        padding:0;
+        border-radius: 125px;
+        
+      }
+    
       .crowdboard-profile-picture {
         height:75px;
         width:85px;
-        border: 1px solid;
         position:absolute;
         top: 62px;
       }
@@ -560,23 +641,21 @@ html {
       }
         .crowdboard-mini-console .comment-number {
           top: 18px;
-          left: 25px;
+          left: 28px;
         }
         .crowdboard-mini-console .recommend-number {
           top: 45px;
-          left: 25px;
+          left: 28px;
         }
         .crowdboard-mini-console .boost-number {
           top: 72px;
-          left: 25px;
+          left: 28px;
         }
         .crowdboard-mini-console .watch-number {
           top: 98px;
-          left: 25px;
+          left: 28px;
         }
 
-      .crowdboard-mini-console a {
-      }
       .crowdboard-mini-console img {
         display:block;
         height:26px;
@@ -589,24 +668,38 @@ html {
         height: 107px;
         width: 90px;
         float:right;
+        position: relative;
       }
 
       .crowdboard-status-bar {
-        margin-top: 10px;
-        margin-left: 10px;
-        float: left;
+        position: absolute;
+        top: 10px;
+        left: 10px;
         width: 8px;
         height: 90px;
+        background:#fff;
+      }
+      .crowdboard-status-bar-position {
+        position: absolute;
+        bottom: 7px;
+        left: 10px;
+        width: 8px;
+        height: 70px;
         background:#72B3C8;
+
       }
       .crowdboard-measure-text {
         float: left;
         font-size: 12px;
+        line-height: 1.2em;
         font-variant: normal;
         color:#fff;
         margin-top: 10px;
-        margin-left: 5px;
+        margin-left: 25px;
       }
+        .crowdboard-measure-text span {
+          font-weight: 100;
+        }
       #invest-button {
         width:100%;
         height: 25px;
@@ -623,7 +716,8 @@ html {
       .crowdboard-text {
         padding: 1px;
         padding-top: 35px;
-        height: 210px;
+        min-height: 210px;
+        padding-bottom: 8px;
         font-size: 11px;
         font-variant: normal;
         line-height: 1.5em;
@@ -665,16 +759,18 @@ footer {
 
 #navbar ul li a:hover, #navbar ul li a.focus {
       color: #75B4C6;
-      border-bottom: 3px solid #75B4C6;
       }
+#navbar ul li a.focus {
+  border-bottom: 3px solid #75B4C6;
+}
 
 .col1:hover,.crowdnews-main:hover,.lineup-main:hover, .latest-crowd-boards:hover {
   background: #FBFBFB;
     
 }
-  .district:hover, .area:hover, .crowdnews-post:hover, .other-boarder-image:hover{
-     -webkit-box-shadow: 0 0 8px rgba(3, 3, 3, 1);
-                  box-shadow: 0 0 8px rgba(3, 3, 3, 1);
+  .district:hover, .area:hover, .crowdnews-post:hover, .other-boarder-image:hover, .crowdboard-container:hover {
+     -webkit-box-shadow: 0 0 6px rgba(3, 3, 3, 1);
+                  box-shadow: 0 0 6px rgba(3, 3, 3, 1);
 
   }
 
@@ -692,13 +788,20 @@ footer {
    -webkit-box-shadow: 0 0 8px rgba(60, 108, 121, 1);
           box-shadow: 0 0 8px rgba(60, 108, 121, 1);
 } 
+.crowdboard-mini-console img:hover {
+  -webkit-box-shadow: 0 0 4px rgba(60, 108, 121, 1);
+          box-shadow: 0 0 4px rgba(60, 108, 121, 1);
+}
+.poster-options img:hover {
+ -webkit-box-shadow: 0 0 5px rgba(60, 108, 121, 1);
+          box-shadow: 0 0 5px rgba(60, 108, 121, 1); 
+}
 
-
-  #post-button:hover, #attach-button:hover {
+  #post-button:hover, #attach-button:hover, #invest-button:hover {
     background-color: #3C6C79;
   }
 
-  #create-crowdboard-button:hover {
+  #create-crowdboard-button:hover, #view-crowdboard-button:hover, .crowdboard-profile-picture:hover ~ #view-crowdboard-button {
     background-color: #3C6C79;
     border: 1px solid #fff;
     color: #fff;
@@ -711,6 +814,13 @@ footer {
     color:#3D8E78 !important;
 
   }
+
+    .crowdboard-video:hover .play-button {
+               -webkit-box-shadow: 0 0 8px rgba(117, 180, 198, 1);
+          box-shadow: 0 0 8px rgba(117, 180, 198, 1);
+          border: 2px solid rgba(117, 180, 198, .1);
+      }
+
 
 
 
@@ -753,7 +863,7 @@ footer {
 
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 1120px) {
 
 }
 
