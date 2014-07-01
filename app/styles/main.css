@@ -266,6 +266,7 @@ html {
     }
 
       textarea {
+        float: left;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -436,7 +437,8 @@ html {
         }
   
         .poster-options {
-          text-align:center;
+          position:relative;
+          text-align: center;
           float: right;
         }
         .poster-options img {
@@ -444,6 +446,24 @@ html {
           width: 55px;
           margin: 0px 2px;
         }
+        .recommend-number,.comment-number,.boost-number, .watch-number {
+          font-size: 9px;
+          color: #fff;
+          position:absolute;
+        }
+        .poster-options .recommend-number{
+          top: 14px;
+          right: 62px;
+        }
+        .poster-options .comment-number {
+          top: 14px;
+          right: 121px;
+        }
+        .poster-options .boost-number {
+          top: 14px;
+          right: 3px;
+        }
+
         .poster-name {
           display: inline-block;
           clear: right;
@@ -486,19 +506,153 @@ html {
     font-size: 26px;
     height: 450px;
     padding: 20px;
+
     margin: 0;
     border-radius: 5px;
     -webkit-box-shadow: 0 0 6px rgba(150, 149, 150, 1);
             box-shadow: 0 0 6px rgba(150, 149, 150, 1);
     background: #DCE0E0;
+    vertical-align: center;
+
   }
-    .latest-crowd-boards img {
+    .crowdboard-container{
+      position:relative;
       float: left;
       height: 350px;
       width: 290px;
-      border: 2px solid blue;
-      margin: 20px 8px 0px;
+      background: #fff;
+      border: 1px solid;
+      margin-top: 20px;
+      margin-left: .5%;
+      margin-right: .5%;
+      padding: 6px;
     }
+      .crowdboard-video {
+        margin:auto;
+        width: 100%;
+        height: 100px;
+        border: 1px solid;
+      }
+      .crowdboard-video img {
+        height: 100%;
+        width:100%;
+      }
+      .crowdboard-profile-picture {
+        height:75px;
+        width:85px;
+        border: 1px solid;
+        position:absolute;
+        top: 62px;
+      }
+      .crowdboard-profile-picture img {
+        height:100%;
+        width:100%;
+      }
+
+      .crowdboard-mini-console {
+        margin-top: 8px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        width:127px;
+        height: 134px;
+        position: relative;
+        float: right;
+      }
+        .crowdboard-mini-console .comment-number {
+          top: 18px;
+          left: 25px;
+        }
+        .crowdboard-mini-console .recommend-number {
+          top: 45px;
+          left: 25px;
+        }
+        .crowdboard-mini-console .boost-number {
+          top: 72px;
+          left: 25px;
+        }
+        .crowdboard-mini-console .watch-number {
+          top: 98px;
+          left: 25px;
+        }
+
+      .crowdboard-mini-console a {
+      }
+      .crowdboard-mini-console img {
+        display:block;
+        height:26px;
+        width: 36px;
+        margin-bottom:1px;
+        margin-right:1px;
+      }
+      .crowdboard-measure {
+        background: #778586;
+        height: 107px;
+        width: 90px;
+        float:right;
+      }
+
+      .crowdboard-status-bar {
+        margin-top: 10px;
+        margin-left: 10px;
+        float: left;
+        width: 8px;
+        height: 90px;
+        background:#72B3C8;
+      }
+      .crowdboard-measure-text {
+        float: left;
+        font-size: 12px;
+        font-variant: normal;
+        color:#fff;
+        margin-top: 10px;
+        margin-left: 5px;
+      }
+      #invest-button {
+        width:100%;
+        height: 25px;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px !important;
+        font-weight: 600;
+        background-color: #72B2C7;
+        color: #fff;
+        cursor: pointer;
+        border:none;
+      }
+      .crowdboard-text {
+        padding: 1px;
+        padding-top: 35px;
+        height: 210px;
+        font-size: 11px;
+        font-variant: normal;
+        line-height: 1.5em;
+        font-weight: 600;
+        background-color: #F6F6F6;
+      }
+      .crowdboard-line-DA,.crowdboard-line-live-since {
+        font-size: 10px;
+      }
+      .crowdboard-line-DA .district-tag a, .crowdboard-line-DA .area-tag a {
+        font-size: 10px !important;
+      }
+
+      .crowdboard-text span, .crowdboard-text div div {
+        font-weight: 400;
+      }
+      #view-crowdboard-button {
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 31px;
+      width: 100%;
+      font-size: 16px !important;
+      font-weight: 600;
+      background-color: #FFFFFF;
+      color: #75B4C6;
+      cursor: pointer;
+      border:none;
+      }
 
 footer {
   clear: both;
@@ -506,6 +660,9 @@ footer {
 
 /* pseudo-elements
 -------------------------------------------------- */
+
+
+
 #navbar ul li a:hover, #navbar ul li a.focus {
       color: #75B4C6;
       border-bottom: 3px solid #75B4C6;
@@ -549,6 +706,16 @@ footer {
   #command-center-controls a:hover, #profile a:hover, .col1 a:hover, .lineup-main a:hover, .crowdnews-main a:hover, .latest-crowd-boards a:hover {
     color: #3C6C79;
   }
+
+  .area-tag a:hover {
+    color:#3D8E78 !important;
+
+  }
+
+
+
+/* Clear Fix
+-------------------------------------------------- */
 
 
 .group:before,
