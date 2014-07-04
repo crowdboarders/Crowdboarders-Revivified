@@ -63,6 +63,7 @@ html {
 #navbar {
   display: table;
   width:100%;
+  font-variant: normal;
 }
 
 #navbar ul {
@@ -104,6 +105,8 @@ html {
 
     	}
 
+     
+
         #navbar ul ul {
           display:none;
           width: 100%;
@@ -114,13 +117,15 @@ html {
           position: absolute; 
           top: 100%;
           right: 78px;
+          line-height: 1.1em;
         }
         #navbar ul li:hover > ul {
           display: block;
 
         }
-
+         
           #navbar ul ul li {
+            width: 100%;
             text-align: center;
             float: none; 
             position: relative;
@@ -128,15 +133,12 @@ html {
             background: rgba(60, 60, 60, .8);
             color: #fff;
             font-size: 13px;
-           
             z-index: 100;
-            
-
           }
             #navbar ul ul li:last-child {
               border-top: 1px solid #fff;
             }
-            #navbar ul ul li a {
+            #navbar ul ul .menu-link {
               display:block;
               background: rgba(60, 60, 60, .8);
               width: 150px;
@@ -145,10 +147,105 @@ html {
               padding:10px;
               margin:0;
             } 
-              #navbar ul ul li a:hover {
+              #navbar ul ul li .menu-link:hover {
                 background: rgba(75, 84, 95, .99);
               }
 
+            .requests-menu li, .notifications-menu li {
+               width: 400px !important;
+               right: 90px !important;
+             }
+            .requests-menu li a, .notifications-menu li a {
+               width: 400px !important;
+             }
+             ul .messages-menu {
+              right: 200px !important;
+             }
+             .messages-menu li {
+              width: 450px !important;
+             }
+             .messages-menu li a {
+              width: 450px !important;
+             }
+            .boarder-message-li {
+              padding: 5px;
+            }
+            .boarder-message {
+              padding: 4px;
+              display: block;
+              min-height: 70px;
+              position: relative;
+              width: 100%;
+              border-radius: 2px;
+              background: #F8FCFC;
+
+            }
+            .boarder-message:hover {
+              background: #DFE2E2;
+            }
+            .boarder-message-image {
+              float: left;
+              height: 57px;
+              width: 52px;
+              margin-right: 5px; 
+              margin-bottom: 5px;
+            }
+            .boarder-message img {
+              display: block;
+              position:absolute;
+              left: -15px;
+              top: 14px;
+              height: 50px !important;
+              width: 50px;
+
+            }
+            .boarder-message-timestamp {
+              position:absolute;
+              right:2px;
+              top:2px;
+              color: #788586;
+              font-size: 10px;
+              font-variant: normal;
+            }
+            .boarder-message-name {
+              font-weight: 600;
+            }
+            .boarder-message-text {
+              font-variant: normal;
+              color: #788586;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              text-align: left; 
+              line-height: 1.2em;
+            }
+            .boarder-message-text a {
+              font-size: 11px !important;
+            }
+          
+          .new-notification {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            font-variant: normal;
+            line-height: 2em;
+            background: #DFE2E2 !important;
+            width: 98%;
+            border-radius: 2px;
+            color: #788586;
+          }
+          .new-friend a {
+            font-size: 12px !important;
+            color: #72B2C7 !important;
+            font-weight: 500 !important;
+          }
+          .current-user a {
+            font-size: 12px !important;
+            color: #72B2C7 !important;
+            font-weight: 500 !important;
+          }
+      
   #navbar img {
     float: right;
     height: 25px;
@@ -167,9 +264,6 @@ html {
   .menu-image {
     float:right;
     height: 100%;
-
-    
-    
   }
 
   #last img {
@@ -208,7 +302,7 @@ html {
     outline:none;
     background: url('../images/search-dark.png') no-repeat 10px 6px #fcfcfc;
     color: #6a6f75;
-    width: 185px;
+    width: 215px;
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
     -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
@@ -257,7 +351,7 @@ html {
           margin: 4%;
           background: #FFFFFF;
           width: 130px;
-          height: 95px;
+          min-height: 95px;
           text-align: center;
           font-size: 18px;
           -webkit-box-shadow: 0 0 8px rgba(150, 149, 150, 1);
@@ -278,6 +372,7 @@ html {
           }
 
   .col2 {
+    position: relative;
     margin: 1% .5% 1% .5%;
     padding: 1em;
     float:left;
@@ -312,12 +407,15 @@ html {
                 box-shadow: 0 0 2px rgba(150, 149, 150, 1);
       }
     #boarder-number {
+      position: absolute;
+      top: 10px;
+      right:10px;
+      font-size: 18px;
       text-align: right;
-      font-size: 14px;
     }
+
     #boarder-name {
-      float: left;
-      margin-top: 39px;
+      margin-top: 65px;
       font-size: 21px;
     }
     #profile {
@@ -371,7 +469,7 @@ html {
     #command-center-controls {
       clear: both;
       line-height: 1.75em;
-      font-size: 22px;
+      font-size: 24px;
       margin-bottom: 40px;
 
     }
@@ -423,9 +521,6 @@ html {
       overflow:hidden;
       width:100%;
       height:110px;
-      
-
-
     }
       .other-boarder-image {
         border-radius: 1px;
@@ -451,6 +546,7 @@ html {
       .other-boarder-name {
         margin: 0 auto;
         font-size: 12px;
+        color: #788586;
 
       }
 
@@ -532,7 +628,6 @@ html {
           top: 14px;
           right: 4px;
         }
-
         .poster-name {
           display: inline-block;
           clear: right;
@@ -544,11 +639,13 @@ html {
           width: 97.5%;
         }
         .district-tag a {
-          font-size:15px !important;
-          
+          text-decoration: none;
+          color: #75B4C6 !important;
+          font-size:15px;
         }
         .area-tag a {
-          font-size:15px !important;
+          text-decoration: none;
+          font-size:15px;
           color: #48A88D !important;
         }
         .time-stamp {
@@ -559,22 +656,25 @@ html {
         }
 
 
-    .lineup-main a,.crowdnews-main a {
+    .title span a {
       color: #75B4C6;
       font-size: 18px;
       text-decoration: none;
     }
 
-.second_block {
-  height: 400px;
+.second-row {
+  height: 450px;
   background: #E9E9E9;
+  width: 100%;
+  overflow: scroll;
 }
   .latest-crowd-boards {
+    height:450px;
     position: relative;
     clear: both;
     text-align: left;
     font-size: 22px;
-    
+    overflow: scroll;
     padding: 20px;
     margin: 0;
     border-radius: 5px;
@@ -582,13 +682,25 @@ html {
             box-shadow: 0 0 6px rgba(150, 149, 150, 1);
     background: #DCE0E0;
     vertical-align: center;
-
   }
+
+    .latest-crowd-boards form {
+      position: absolute;
+      right:30px;
+      top:15px;
+    }
+    .latest-crowd-boards input[type="text"] {
+      width: 220px !important;
+      background-color: #fff !important;
+          -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.9), 0 1px 3px rgba(255, 255, 255, 0.9) inset;
+           -moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.9), 0 1px 3px rgba(255, 255, 255, 0.9) inset;
+                box-shadow: 0 0 1px rgba(255, 255, 255, 0.9), 0 1px 3px rgba(255, 255, 255, 0.9) inset;
+    }
+
     .crowdboard-container {
       position:relative;
       float: left;
       width: 290px;
-
       background: #fff;
       margin-top: 20px;
       margin-left: .5%;
@@ -774,7 +886,8 @@ footer {
 
   }
 
-  .district:hover .DAcontent {
+  .district:hover .DAcontent, .area:hover .DAcontent
+   {
      margin: 0 auto;
      display: inline;
  }
@@ -813,6 +926,9 @@ footer {
   .area-tag a:hover {
     color:#3D8E78 !important;
 
+  }
+  .district-tag a:hover {
+    color:#3C6C79 !important;
   }
 
     .crowdboard-video:hover .play-button {
