@@ -66,6 +66,12 @@ html {
   font-variant: normal;
 }
 
+#navbar ul .navbar-responsive {
+  display: none;
+  height: 100%;
+  cursor: pointer;
+}
+
 #navbar ul {
   position::relative;
   display:table-cell;
@@ -119,10 +125,11 @@ html {
           right: 78px;
           line-height: 1.1em;
         }
+
         #navbar ul li:hover > ul {
           display: block;
 
-        }
+        } 
          
           #navbar ul ul li {
             width: 100%;
@@ -260,6 +267,7 @@ html {
     margin-right: 25px !important;
     float:right;
     height: 100%;
+    cursor: pointer;
   }
   .menu-image {
     float:right;
@@ -275,7 +283,6 @@ html {
     display: inline-block;
     float: right;
     margin-left: 20px;
-
     padding: 0;
   }
   #search input[type="text"] {
@@ -987,4 +994,41 @@ footer {
   .container{
     width: 1400px;
   }
+}
+
+@media only screen and (max-width: 960px) {
+
+  #navbar ul li, #navbar form {
+    display: none;
+  }
+  #last {
+    margin: 0;
+  }
+  #navbar ul .navbar-responsive, #navbar ul #last {
+    display: inline-block;
+  }
+  #navbar ul .navbar-responsive ul {
+    right:35px;
+  }
+
+  #navbar ul .navbar-responsive li {
+    display: block;
+    width: 320px;
+  }
+  #navbar ul .navbar-responsive li a {
+    display: block;
+    width: 100%;
+  }
+   #navbar ul #last ul {
+    right: 248px;
+   }
+   #navbar ul #last li {
+    display: inline-block;
+    width: 320px;
+   }
+   #navbar ul #last li a {
+    display: block;
+    width:100%;
+   }
+
 }
