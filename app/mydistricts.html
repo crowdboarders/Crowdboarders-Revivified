@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CrowdBoarders</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/myconsole.css" />
+  <link rel="stylesheet" href="styles/profile.css" />
+</head>
+<body>
+<!--        NAVBAR      -->
+  <div id="navbar">
+    <ul>
+      <li><a class="focus" href="index.html">My Console</a></li>
+      <li><a href="districts.html">All Districts</a></li>
+      <li><a href="crowdnews.html">Crowd News</a></li>
+      <li id="cogs"><img src="images/cogs.png" />
+        <ul>
+          <li><a class="menu-link" href="#">Help</a></li>
+          <li><a class="menu-link" href="#">FAQ</a></li>
+          <li><a class="menu-link" href="#">Blog</a></li>
+          <li><a class="menu-link" href="#">Settings</a></li>
+          <li><a class="menu-link" href="#">Log Out</a></li>
+        </ul>
+      </li>
+      <form method="get" action="/search" id="search">
+       <input name="q" type="text" size="40" placeholder="Search..." />
+      </form>
+
+      <li class="menu-image"><a href=""><span>(3)</span><img src="images/crowd.png" /></a>
+        <ul class="requests-menu">
+          <li>Boarder Requests</li>
+          <li>
+            <div class="new-request">
+              <span class="new-friend"><a href="">George W. Bush</a></span> wants to be friends with you.
+              <div class="request-accept"><input type= "button" value="Accept" id="accept-button" /></div>
+              <div class="request-decline"> <input type= "button" value="Decline" id="decline-button"/></div>
+            </div>
+          </li>
+          <li><a class="menu-link" href="#">View All Boarder Requests</a></li>
+        </ul>
+      </li>
+
+      <li class="menu-image"><a href=""><span>(2)</span><img class="email" src="images/email.png" /></a>
+        <ul class="messages-menu">
+          <li>Messages</li>
+
+          <li class="boarder-message-li">
+              <div class="boarder-message href-div">
+                  <div class="boarder-message-image"><img src="images/selfportrait.png" /></div>
+                  <div class="boarder-message-timestamp">07/02/14 at 5:00PM</div>
+                  <div class="boarder-message-text"><div class="boarder-message-name">Matthew Aurich says</div>Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span> Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span>
+                  </div>
+              </div>
+          </li>
+
+          <li class="boarder-message-li">
+              <div class="boarder-message href-div"> 
+                  <div class="boarder-message-image"><img src="images/selfportrait.png" /></div>
+                  <div class="boarder-message-timestamp">07/02/14 at 5:00PM</div>
+                  <div class="boarder-message-text"><div class="boarder-message-name">Matthew Aurich says</div>Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span> Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span>
+                  </div>
+              </div>
+          </li>
+          <li><a class="menu-link" href="#">View All Messages</a></li>
+        </ul>
+      </li>
+
+      <li class="menu-image"><a href=""><span>(1)</span><img id="crowdboard-logo" src="images/crowdboarders.png" /></a>
+        <ul class="notifications-menu">
+          <li>Notifications</li>
+          <li>
+            <span class="new-notification"><span class="new-friend"><a href="">President Obama</a></span> is now friends with <span class="current-user"><a href="">Matthew Aurich</a></span>
+            </span>
+          </li>
+          <li><a class="menu-link" href="#">View All Notifications</a></li>
+        </ul>
+      </li>
+
+         <li class="navbar-responsive"><img src="images/menu.png" />
+        <ul>
+          <li><a class="menu-link" href="index.html">My Console</a></li>
+          <li><a class="menu-link" href="districts.html">All Districts</a></li>
+          <li><a class="menu-link" href="crowdnews.html">Crowd News</a></li>
+          <li><a class="menu-link" href="#">Notifications</a></li>
+          <li><a class="menu-link" href="#">Messages</a></li>
+          <li><a class="menu-link" href="#">Boarder Requests</a></li>
+          <li><a class="menu-link" href="#">Messages</a></li>
+          <li><a class="menu-link" href="#">Search</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+<!--       End of NAVBAR      -->
+<!--        First Row            -->
+  <div class="container" id="first-row">
+    <div class="profile-banner">
+      <div class="banner-picture"><img src="images/profilebanner.jpeg" />
+      </div>
+    </div>
+    <div class = "profile-picture"><img src="images/dkpicture.png" />
+  </div>
+
+<!--       End of First Row      -->
+<!--       Second Row      -->
+  <div class="container" id="second-row">
+    <!--       First Column      -->
+    <div class="col1">
+      <div class="profile-name">DK</div>
+      <div class="add-boarder"><input type= "button" value="Add" id="add-button" /></div>
+      <div class="my-activity"><a href="profile.html">My Activity</a></div>
+      <div class="my-boardfolio"><a href="myboardfolio.html">My Boardfolio</a><span class="boardfolio-number">(4)</span></div>
+      <div class="my-districts"><a href="mydistricts.html">My Districts</a><span class="districts-number">(1)</span></div>
+      <div class="my-areas"><a href="myareas.html">My Areas</a><span class="areas-number"></span>(2)</div>
+      <div class="my-crowdboards"><a href="mycrowdboards.html">My CrowdBoards</a><span class="crowdboards-number">(3)</span></div>
+      <div class="my-lineup"><a href="myboarderslineup.html">Boarders Lineup</a><span class="linup-number">(5)</span></div>
+    </div>
+    <!--       Second Column      -->
+    <div class="row-container">
+      <div class="col2">
+        <div class="name">Name:<span>Danny Kelman</span></div>
+        <div class="profession">Profession:<span>CrowdBoarder</span></div>
+        <div class="resides">Resides In:<span>Dallas TX</span></div>
+        <div class="hometown">Hometown:<span>Birmingham England</span></div>
+        <div class="birthday">Birthday:<span>OCT 22</span></div>
+        <div class="skills">Skills:<span>Creativity</span></div>
+        <div class="website">Website:<span>www.crowdboarders.com</span></div>
+      </div>
+      <!--       Third Column      -->
+      <div class="col3">
+        <div class="about-me">About Me:<div>I am a young passionate individual who looks to change the world.</div>
+        </div>
+        <div class="passions">My Passions Are:<div>Health love and wealth</div>
+        </div>
+        <div class="dreams">My Dream is:<div>To turn the world into CrowdBoarders</div>
+        </div>
+      </div>
+    </div>
+    <!--       Fourth Column      -->
+    <div class="col4"> <span class="profile-name">DK's </span><span class="page-name">Districts</span>
+      <div class="container">
+        <a href=""><div class="district"><img src="images/art.jpeg"><span class="DAcontent">Art</span></div></a>
+        <a href=""><div class="district"><img src="images/causes.jpg"><span class="DAcontent">Causes</span></div></a>
+        <a href=""><div class="district"><img src="images/gaming.jpeg"><span class="DAcontent">Gaming</span></div></a>
+        <a href=""><div class="district"><img src="images/green.jpeg"><span class="DAcontent">Green</span></div></a>
+        <a href=""><div class="district"><img src="images/tech.jpeg"><span class="DAcontent">Tech</span></div></a>
+        <a href=""><div class="district"><img src="images/theatre.jpeg"><span class="DAcontent">Theatre</span></div></a>
+        <a href=""><div class="district"><img src="images/art.jpeg"><span class="DAcontent">Art</span></div></a>
+        <a href=""><div class="district"><img src="images/causes.jpg"><span class="DAcontent">Causes</span></div></a>
+        <a href=""><div class="district"><img src="images/gaming.jpeg"><span class="DAcontent">Gaming</span></div></a>
+        <a href=""><div class="district"><img src="images/green.jpeg"><span class="DAcontent">Green</span></div></a>
+        <a href=""><div class="district"><img src="images/tech.jpeg"><span class="DAcontent">Tech</span></div></a>
+        <a href=""><div class="district"><img src="images/theatre.jpeg"><span class="DAcontent">Theatre</span></div></a>        
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer>
+  </footer>
+
+  <script src="jQuery/jquery.js"></script>
+
+  <script src="scripts/navbar.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+</html>

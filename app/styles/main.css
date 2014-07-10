@@ -56,14 +56,12 @@ html {
   height: 100%;
   background-image: url('../images/backgrounds/shattered/shattered.png');
   font-family: helvetica;
-  font-variant: small-caps;
   color: #788586;
 }
 
 #navbar {
   display: table;
   width:100%;
-  font-variant: normal;
 }
 
 #navbar ul .navbar-responsive {
@@ -177,6 +175,10 @@ html {
             .boarder-message-li {
               padding: 5px;
             }
+
+            .email {
+              border-radius: 8px;
+            }
             .boarder-message {
               padding: 4px;
               display: block;
@@ -185,11 +187,8 @@ html {
               width: 100%;
               border-radius: 2px;
               background: #F8FCFC;
-
             }
-            .boarder-message:hover {
-              background: #DFE2E2;
-            }
+    
             .boarder-message-image {
               float: left;
               height: 57px;
@@ -212,13 +211,11 @@ html {
               top:2px;
               color: #788586;
               font-size: 10px;
-              font-variant: normal;
             }
             .boarder-message-name {
               font-weight: 600;
             }
             .boarder-message-text {
-              font-variant: normal;
               color: #788586;
               padding-top: 5px;
               padding-bottom: 5px;
@@ -229,19 +226,50 @@ html {
               font-size: 11px !important;
             }
           
-          .new-notification {
+          .new-notification, .new-request {
+            position: relative;
             display: block;
             margin-right: auto;
             margin-left: auto;
             margin-top: 3px;
             margin-bottom: 3px;
-            font-variant: normal;
             line-height: 2em;
             background: #DFE2E2 !important;
             width: 98%;
             border-radius: 2px;
             color: #788586;
           }
+          .new-request {
+            padding-bottom: 25px;
+          }
+          .request-accept {
+            position: absolute;
+            bottom: 3px;
+            right: 205px;
+
+          }
+          .request-decline {
+            position: absolute;
+            bottom: 3px;
+            right: 145px;
+          }
+          #accept-button, #decline-button {
+            margin: 0;
+            padding: 4px 8px 5px;
+            font-size: 10px;    
+            font-weight: 600;
+            background-color: #75B4C6;
+            color: #ffffff;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+              -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+              -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+          }
+
           .new-friend a {
             font-size: 12px !important;
             color: #72B2C7 !important;
@@ -252,29 +280,32 @@ html {
             color: #72B2C7 !important;
             font-weight: 500 !important;
           }
-      
+
   #navbar img {
     float: right;
     height: 25px;
+    margin-top: 0;
     margin-right: 5px;
     margin-left: 20px;
-
+    padding: 0;
   }
   #crowdboard-logo {
     height: 30px !important;
   }
-  #last {
+  #cogs {
     margin-right: 25px !important;
     float:right;
     height: 100%;
     cursor: pointer;
   }
   .menu-image {
+    margin-top:0;
     float:right;
     height: 100%;
+    padding:0;
   }
 
-  #last img {
+  #cogs img {
     height: 30px;
   }
 
@@ -320,17 +351,16 @@ html {
 .container {
   clear: both;
   width: 99%;
+  height: 100%;
   margin:auto;
-  height: 575px;
   display: table;
 }
   
   .col1 {
-    padding: .5em;
+    padding: 8px;
     margin: 1% .5% 1% 0;
     float:left;
     width: 15%;
-
     background-color: #DCE0E0;
     border-radius: 2px;
 
@@ -343,14 +373,28 @@ html {
     margin-top: 20px;
     font-size: 20px;
     line-height: 45px;
+
     }  
+
+    #mydistricts::-webkit-scrollbar,#myareas::-webkit-scrollbar,.crowdnews::-webkit-scrollbar, .latest-crowd-boards > div::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 6px;
+    height: 6px;
+    }
+    #mydistricts::-webkit-scrollbar-thumb,#myareas::-webkit-scrollbar-thumb,.crowdnews::-webkit-scrollbar-thumb,.latest-crowd-boards > div::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: rgba(60,60,60,.3);
+      -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    }
       #mydistricts, #myareas {
         height: 40%;
         width: 90%;
         overflow: auto;
         border-radius: 2px;
         margin-right: auto;
-          margin-left: auto;  
+        margin-left: auto;  
+        padding-bottom: 20px;
+
       }
         .district, .area {
           border-radius: 1px;
@@ -422,12 +466,12 @@ html {
     }
 
     #boarder-name {
-      margin-top: 65px;
+      margin-top: 55px;
       font-size: 21px;
     }
     #profile {
       float: left;
-      margin-top: 15px;
+      margin-top: 6px;
       
       font-size: 19px;
     }
@@ -443,11 +487,11 @@ html {
         margin-left: auto;
         margin-right: auto;
         font-size: 16px;
-        font-variant: normal;
         padding: 5px;
         height: 6em;
         width: 99%;
-        border: 1px solid #788586;
+        border: 1px solid #C8DEDF;
+        resize: none;
         border-radius: 2px;
       }
       #attach-button, #post-button {
@@ -456,7 +500,7 @@ html {
         margin-bottom: 25px;
         margin-right: 10px;
         padding: 10px 15px 11px;
-        font-size: 16px !important;    
+        font-size: 16px;    
         font-weight: 600;
         background-color: #75B4C6;
         color: #ffffff;
@@ -492,7 +536,7 @@ html {
       margin-right: auto;
       margin-top: 10px;
       padding: 15px 20px 16px !important;
-      font-size: 26px !important;
+      font-size: 26px;
       font-weight: 600;
       background-color: #FFFFFF;
       color: #75B4C6;
@@ -516,8 +560,8 @@ html {
     .lineup-main{
       padding: 10px;
       font-size: 22px;
-      margin-bottom: 1%;
-      height:29%;
+      margin-bottom: 2%;
+      height:27%;
       border-radius: 2px;
       background-color: #DCE0E0;
       -webkit-box-shadow:   0 0 6px rgba(150, 149, 150, 1);
@@ -525,17 +569,20 @@ html {
       
     }
     .lineup{
-      overflow:hidden;
+      padding-right: 12px;
+      overflow-y:auto;
+      white-space: nowrap;
       width:100%;
-      height:110px;
+      height:120px;
     }
       .other-boarder-image {
+        position: relative;
         border-radius: 1px;
         display: inline-block;
         margin-left: 7px;
         margin-top: 8px;    
         background: #FFFFFF;
-        width: 90px;
+        min-width: 90px;
         height: 95px;
         text-align: center;
         font-size: 18px;
@@ -551,6 +598,8 @@ html {
                   box-shadow: 0 0 2px rgba(150, 149, 150, 1);
         }
       .other-boarder-name {
+        display: block;
+        padding: 3px 4px;
         margin: 0 auto;
         font-size: 12px;
         color: #788586;
@@ -560,7 +609,7 @@ html {
     .crowdnews-main {
       padding: 15px;
       font-size: 22px;
-      height: 70%;
+      height: 71%;
       background-color: #DCE0E0;
       border-radius: 2px;
       -webkit-box-shadow: 0 0 6px rgba(150, 149, 150, 1);
@@ -569,21 +618,22 @@ html {
     }
 
     .crowdnews {
-      overflow-y: scroll;
+      overflow: auto;
       height: 94%;
       padding-left: 30px;
       padding-right: 30px;
+      padding-bottom: 30px;
+      margin: 2px;
     }
       .crowdnews-post {
-        font-variant: normal;
         line-height: 1.25em;
         border-radius: 1px;
         display: inline-block;
-        margin-left: 7px;
+        margin-left: 0px;
         margin-top: 8px;
         padding: 6px;    
         background: #FFFFFF;
-        width: 98%;
+        width: 99%;
         
         text-align: left;
         font-size: 16px;
@@ -597,10 +647,9 @@ html {
         background-color: #F8FCFC;
         padding-bottom: 30px;
       }
-        .crowdnews-post img {
-          float: left;
+        .posted-material > a > img {
           border-radius: 2px;
-          margin-right: 15px;
+          margin-right: 10px;
           height: 65px;
           width: 90px;
           -webkit-box-shadow: 0 0 2px rgba(150, 149, 150, 1);
@@ -608,14 +657,15 @@ html {
         }
   
         .poster-options {
-          position:relative;
+          position:absolute;
           text-align: center;
-          float: right;
+          top:0;
+          right: 0;
         }
         .poster-options img {
           height: 30px;
           width: 55px;
-          margin: 0px 2px;
+          margin: 0px;
         }
         .recommend-number,.comment-number,.boost-number, .watch-number {
           font-size: 6px;
@@ -636,13 +686,14 @@ html {
           right: 4px;
         }
         .poster-name {
-          display: inline-block;
-          clear: right;
-          margin-top: 40px;
+          display: inline;
+          margin-top: 0;
+          color: #616C6C;
         }
+
         .poster-comment {
           padding:5px;
-          padding-top: 10px;
+          padding-top: 5px;
           width: 97.5%;
         }
         .district-tag a {
@@ -669,9 +720,8 @@ html {
       text-decoration: none;
     }
 
-.second-row {
+#second-row {
   height: 450px;
-  background: #E9E9E9;
   width: 100%;
   overflow: scroll;
 }
@@ -681,7 +731,7 @@ html {
     clear: both;
     text-align: left;
     font-size: 22px;
-    overflow: scroll;
+
     padding: 20px;
     margin: 0;
     border-radius: 5px;
@@ -690,6 +740,12 @@ html {
     background: #DCE0E0;
     vertical-align: center;
   }
+  .latest-crowd-boards > div {
+  height: 400px;
+  margin-top: 8px;
+  overflow: auto;
+  padding-bottom: 20px;
+}
 
     .latest-crowd-boards form {
       position: absolute;
@@ -811,7 +867,6 @@ html {
         float: left;
         font-size: 12px;
         line-height: 1.2em;
-        font-variant: normal;
         color:#fff;
         margin-top: 10px;
         margin-left: 25px;
@@ -838,7 +893,6 @@ html {
         min-height: 210px;
         padding-bottom: 8px;
         font-size: 11px;
-        font-variant: normal;
         line-height: 1.5em;
         font-weight: 600;
         background-color: #F6F6F6;
@@ -867,6 +921,22 @@ html {
       border:none;
       }
 
+      .empty-crowdboard {
+        height: 353px;
+        text-align: center;
+        padding-top: 104px;
+        line-height: 2em;
+        font-size: 18px; 
+      }
+
+      .empty-crowdboard div a {
+        margin-top: 15px;
+        line-height: 4em;
+        text-decoration: none;
+        font-weight: 600;
+        color:#75B4C6;
+      }
+
 footer {
   clear: both;
 }
@@ -874,13 +944,20 @@ footer {
 /* pseudo-elements
 -------------------------------------------------- */
 
-
+.newsfeed-message:hover {
+    -webkit-box-shadow: 0 0 6px rgba(60, 108, 121, .3);
+            box-shadow: 0 0 6px rgba(60, 108, 121, .3);    
+  }
 
 #navbar ul li a:hover, #navbar ul li a.focus {
       color: #75B4C6;
       }
 #navbar ul li a.focus {
   border-bottom: 3px solid #75B4C6;
+}
+#navbar .boarder-message:hover {
+  background: #DFE2E2;
+  cursor: pointer;
 }
 
 .col1:hover,.crowdnews-main:hover,.lineup-main:hover, .latest-crowd-boards:hover {
@@ -917,7 +994,7 @@ footer {
           box-shadow: 0 0 5px rgba(60, 108, 121, 1); 
 }
 
-  #post-button:hover, #attach-button:hover, #invest-button:hover {
+  #post-button:hover, #attach-button:hover, #invest-button:hover, #accept-button:hover, #decline-button:hover {
     background-color: #3C6C79;
   }
 
@@ -926,7 +1003,7 @@ footer {
     border: 1px solid #fff;
     color: #fff;
   }
-  #command-center-controls a:hover, #profile a:hover, .DA a:hover, .lineup-main a:hover, .crowdnews-main a:hover, .latest-crowd-boards a:hover {
+  #command-center-controls a:hover, #profile a:hover, .DA a:hover, .lineup-main a:hover, .crowdnews-main a:hover, .latest-crowd-boards a:hover,.empty-crowdboard div a:hover {
     color: #3C6C79;
   }
 
@@ -934,7 +1011,7 @@ footer {
     color:#3D8E78 !important;
 
   }
-  .district-tag a:hover {
+  .district-tag a:hover,  .current-user a:hover, .new-friend a:hover {
     color:#3C6C79 !important;
   }
 
@@ -967,24 +1044,6 @@ footer {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media only screen and (max-width: 768px) {
-  .col1, .col2, .col3, .latest-crowd-boards {
-    float: none;
-    width: 90%;
-    margin: 5px auto;
-  }
-  .col2 {
-    float: none;
-    width: 90%;
-    margin: 5px auto;
-  }
-  .col3 {
-    float: none;
-    width: 90%;
-    margin: 5px auto;
-  }
-
-}
 
 @media only screen and (max-width: 1120px) {
 
@@ -996,15 +1055,16 @@ footer {
   }
 }
 
+
 @media only screen and (max-width: 960px) {
 
   #navbar ul li, #navbar form {
     display: none;
   }
-  #last {
+  #cogs {
     margin: 0;
   }
-  #navbar ul .navbar-responsive, #navbar ul #last {
+  #navbar ul .navbar-responsive, #navbar ul #cogs {
     display: inline-block;
   }
   #navbar ul .navbar-responsive ul {
@@ -1019,16 +1079,15 @@ footer {
     display: block;
     width: 100%;
   }
-   #navbar ul #last ul {
+   #navbar ul #cogs ul {
     right: 248px;
    }
-   #navbar ul #last li {
+   #navbar ul #cogs li {
     display: inline-block;
     width: 320px;
    }
-   #navbar ul #last li a {
+   #navbar ul #cogs li a {
     display: block;
     width:100%;
    }
-
 }

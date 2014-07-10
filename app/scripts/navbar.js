@@ -7,12 +7,18 @@ $(document).ready(function(){
       $(".navbar-responsive > ul").css("display","none");
      }
   });
-   $("#last").click(function(){
-     if ($("#last > ul").css("display") == "none") {
-      $("#last > ul").css("display","block");
+  $("#cogs").click(function(){
+     if ($("#cogs > ul").css("display") == "none") {
+      $("#cogs > ul").css("display","block");
      }
      else {
-      $("#last > ul").css("display","none");
+      $("#cogs > ul").css("display","none");
      }
   });
+
+
+  $("div.href-div").click(function () {
+      window.location.href = '#'; 
+  });
+
 });

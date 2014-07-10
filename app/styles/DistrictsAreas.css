@@ -10,7 +10,8 @@ html {
 /* FIRST ROW
 ----------------------------------------------------------------------------- */
 
-.first-row {
+
+#first-row {
 	height:120px;
 	width: 100%;
 	padding-left: 7px;
@@ -24,7 +25,6 @@ html {
 		padding-right: 20px;
 		min-height: 120px;
 		width: 100%;
-		background: #FBFBFB;
     	border-radius: 2px;
     	margin: .5% 0;
     	-webkit-box-shadow:    0 0 6px rgba(150, 149, 150, 1);
@@ -70,7 +70,7 @@ html {
 /* SECOND ROW
 --------------------------------------------------------------------------- */
 
-	.second-row {
+	#second-row {
 		width: 100%;
 		min-height: 640px;
 		padding-left: 7px;
@@ -86,7 +86,6 @@ html {
 		margin:0;
 		height: 100%;
 		width: 9.8%;
-		background: #FBFBFB;
 		padding-right: 8px;
 		padding-left: 8px;
 		overflow: scroll;
@@ -130,6 +129,7 @@ html {
 		width: 72.2%;
 		background: #FBFBFB;
 		padding: 8px;
+		padding-bottom: 25px;
 		overflow: scroll;
 	}
 		.welcome-banner, .WOTS-banner {
@@ -156,8 +156,11 @@ html {
 			}
 			.quote-text, .welcome-banner cite {
 				font-style:italic;
-				font-size: 12px;
+				font-size: 14px;
 				font-variant: normal;
+			}
+			.welcome-banner cite {
+				font-style:normal;
 			}
 			.population-text {
 				position: absolute;
@@ -200,14 +203,12 @@ html {
 		margin: 0;
 		height: 100%;
 		width: 16.8%;
-		background: #FBFBFB;
 	    padding: 8px;
+	    padding-bottom: 25px;
 	    float:left;
 	    border-radius: 3px;
 	    -webkit-box-shadow:   0 0 6px rgba(150, 149, 150, 1);
 	            box-shadow:   0 0 6px rgba(150, 149, 150, 1);
-
-	    background: #FBFBFB;
 	    overflow: scroll;
 	}
 		.WOTS-banner {
@@ -222,7 +223,7 @@ html {
 			width: 100%;
 			min-height: 115px;
 			margin-top: 10px;
-			padding: 8px 10px;
+			padding: 8px 6px;
 		}
 			form {
 			}
@@ -320,6 +321,10 @@ html {
 	#join-incrowd-button:hover, .areas-WOTS-banner #view-full-button:hover {
 		background: #3D8E78;
 		color: #fff;
+	}
+
+	.districts:hover, .col3:hover {
+		background: #FBFBFB;
 	}
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Crowdboarders</title>
+  <title>CrowdBoarders</title>
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" href="styles/main.css" />
@@ -17,8 +17,8 @@
     <ul>
       <li><a href="index.html">My Console</a></li>
       <li><a class="focus" href="districts.html">All Districts</a></li>
-      <li><a href="#">Crowd News</a></li>
-      <li id="last"><img src="images/cogs.png" />
+      <li><a href="crowdnews.html">Crowd News</a></li>
+      <li id="cogs"><img src="images/cogs.png" />
         <ul>
           <li><a class="menu-link" href="#">Help</a></li>
           <li><a class="menu-link" href="#">FAQ</a></li>
@@ -35,8 +35,11 @@
         <ul class="requests-menu">
           <li>Boarder Requests</li>
           <li>
-            <span class="new-notification"><span class="new-friend"><a href="">George W. Bush</a></span> wants to be friends with you.
-            </span>
+             <div class="new-request">
+              <span class="new-friend"><a href="">George W. Bush</a></span> wants to be friends with you.
+              <div class="request-accept"><input type= "button" value="Accept" id="accept-button" /></div>
+              <div class="request-decline"> <input type= "button" value="Decline" id="decline-button"/></div>
+            </div>
           </li>
           <li><a class="menu-link" href="#">View All Boarder Requests</a></li>
         </ul>
@@ -47,7 +50,7 @@
           <li>Messages</li>
 
           <li class="boarder-message-li">
-              <div class="boarder-message"> 
+              <div class="boarder-message href-div"> 
                   <div class="boarder-message-image"><img src="images/selfportrait.png" /></div>
                   <div class="boarder-message-timestamp">07/02/14 at 5:00PM</div>
                   <div class="boarder-message-text"><div class="boarder-message-name">Matthew Aurich says</div>Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span> Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span>
@@ -56,7 +59,7 @@
           </li>
 
           <li class="boarder-message-li">
-              <div class="boarder-message"> 
+              <div class="boarder-message href-div"> 
                   <div class="boarder-message-image"><img src="images/selfportrait.png" /></div>
                   <div class="boarder-message-timestamp">07/02/14 at 5:00PM</div>
                   <div class="boarder-message-text"><div class="boarder-message-name">Matthew Aurich says</div>Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span> Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span>
@@ -96,7 +99,7 @@
 
 <!--                  FIRST ROW                       -->
 
-  <div class="container first-row">
+  <div class="container" id="first-row">
 
     <div class="districts">
 
@@ -150,7 +153,7 @@
 
 <!--                SECOND ROW                                 -->
 
-<div class="container second-row">
+<div class="container" id="second-row">
 
   <!--                  FIRST COLUMN                              -->
 
@@ -306,6 +309,51 @@
         </div>
         <input type="button" value="View CrowdBoard" id="view-crowdboard-button" />
       </div>
+
+      <div class="crowdboard-container empty-crowdboard group">
+        <div>Your idea can be here!</div>
+        <div>What are you waiting for?</div>
+        <div><a href ="">Create CrowdBoard</a></div> 
+      </div>
+
+
+       <div class="crowdboard-container group">
+        <div class="crowdboard-video">
+          <a href=""><img src="images/crowdboardvideopreview.png" /><div class="play-button"><img src="images/playbutton.png" /></div></a>
+        </div>
+        <div class="crowdboard-profile-picture">
+          <a href=""><img src="images/crowdboardpreview.png" /></a>
+        </div>
+        <div class="crowdboard-mini-console">
+          <div class="crowdboard-measure">
+            <div class="crowdboard-status-bar"></div>
+            <div class="crowdboard-status-bar-position"></div>
+            <div class="crowdboard-measure-text">
+              <div class="crowdboard-measure-level">Level</br><span>9</span></div>
+              <div class="crowdboard-measure-max-left">Max Left</br><span>$2,345</span></div>
+              <div class="crowdboard-measure-boarders-in">Boarders In</br><span>54,346</span></div>
+            </div>
+          </div>
+          <a href=""><img src="images/comment.png" /><div class="comment-number">(1)</div></a>
+          <a href=""><img src="images/recommend.png" /><div class="recommend-number">(2)</div></a>
+          <a href=""><img src="images/boost.png" /><div class="boost-number">(3)</div></a>
+          <a href=""><img src="images/watchwbg.png" /><div class="watch-number">(4)</div></a>
+          <input type="button" value="INVEST!" id="invest-button" />
+        </div>
+        <div class="crowdboard-text">
+          <div class="crowdboard-line-name">Name: <span>The Guards Museum</span></div>
+          <div class="crowdboard-line-location">Location: <span>London</span></div>
+          <div class="crowdboard-line-seeking">Seeking: <span>$250,000</span></div>
+          <div class="crowdboard-line-DA">District: <span class="district-tag"><a href="">Causes</a></span> Area: <span class="area-tag"><a href="">Military</a></span></div>
+          <div class="crowdboard-line-live-since">Live Since: <span>January 3rd</span></div>
+          <div class="crowdboard-wrapper-description">Description:</br>
+            <div class="crowdboard-description">The Guards Museum London is building a memorial garden monument to commemorate the centenial of WW1 and the battles on Flanders Field.
+            </div>
+          </div>
+        </div>
+        <input type="button" value="View CrowdBoard" id="view-crowdboard-button" />
+      </div>
+
     </div>
     <!--            END OF      CROWDBOARDS                           -->
   <!--                  THIRD COLUMN                              -->
@@ -406,7 +454,7 @@
   <script src="jQuery/jquery.js"></script>
 
   <script src="scripts/navbar.js"></script>
-  <script src="scripts/myconsole.js"></script>
+
 
 </body>
 </html>
