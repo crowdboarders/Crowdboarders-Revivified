@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CrowdBoarders</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/editprofile.css" />
+</head>
+
+
+
+<body>
+  <!--   NAVBAR -->
+
+  <div id="navbar">
+    <ul>
+      <li><a href="index.html">My Console</a></li>
+      <li><a href="districts.html">All Districts</a></li>
+      <li><a href="crowdnews.html">Crowd News</a></li>
+      <li id="cogs"><img src="images/cogs.png" />
+        <ul>
+          <li><a class="menu-link" href="#">Help</a></li>
+          <li><a class="menu-link" href="#">FAQ</a></li>
+          <li><a class="menu-link" href="#">Blog</a></li>
+          <li><a class="menu-link" href="#">Settings</a></li>
+          <li><a class="menu-link" href="#">Log Out</a></li>
+        </ul>
+      </li>
+      <form method="get" action="/search" id="search">
+       <input name="q" type="text" size="40" placeholder="Search..." />
+      </form>
+
+      <li class="menu-image"><a href=""><span>(3)</span><img src="images/crowd.png" /></a>
+        <ul class="requests-menu">
+          <li>Boarder Requests</li>
+          <li>
+             <div class="new-request">
+              <span class="new-friend"><a href="">George W. Bush</a></span> wants to be friends with you.
+              <div class="request-accept"><input type= "button" value="Accept" id="accept-button" /></div>
+              <div class="request-decline"> <input type= "button" value="Decline" id="decline-button"/></div>
+            </div>
+          </li>
+          <li><a class="menu-link" href="#">View All Boarder Requests</a></li>
+        </ul>
+      </li>
+
+      <li class="menu-image"><a href=""><span>(2)</span><img class="email" src="images/email.png" /></a>
+        <ul class="messages-menu">
+          <li>Messages</li>
+
+          <li class="boarder-message-li">
+              <div class="boarder-message href-div"> 
+                  <div class="boarder-message-image"><img src="images/selfportrait.png" /></div>
+                  <div class="boarder-message-timestamp">07/02/14 at 5:00PM</div>
+                  <div class="boarder-message-text"><div class="boarder-message-name">Matthew Aurich says</div>Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span> Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span>
+                  </div>
+              </div>
+          </li>
+
+          <li class="boarder-message-li">
+              <div class="boarder-message href-div"> 
+                  <div class="boarder-message-image"><img src="images/selfportrait.png" /></div>
+                  <div class="boarder-message-timestamp">07/02/14 at 5:00PM</div>
+                  <div class="boarder-message-text"><div class="boarder-message-name">Matthew Aurich says</div>Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span> Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span>
+                  </div>
+              </div>
+          </li>
+          <li><a class="menu-link" href="#">View All Messages</a></li>
+        </ul>
+      </li>
+
+      <li class="menu-image"><a href=""><span>(1)</span><img id="crowdboard-logo" src="images/crowdboarders.png" /></a>
+        <ul class="notifications-menu">
+          <li>Notifications</li>
+          <li>
+            <span class="new-notification"><span class="new-friend"><a href="">President Obama</a></span> is now friends with <span class="current-user"><a href="">Matthew Aurich</a></span>
+            </span>
+          </li>
+          <li><a class="menu-link" href="#">View All Notifications</a></li>
+        </ul>
+      </li>
+
+      <li class="navbar-responsive"><img src="images/menu.png" />
+        <ul>
+          <li><a class="menu-link" href="index.html">My Console</a></li>
+          <li><a class="menu-link" href="districts.html">All Districts</a></li>
+          <li><a class="menu-link" href="#">Crowd News</a></li>
+          <li><a class="menu-link" href="#">Notifications</a></li>
+          <li><a class="menu-link" href="#">Messages</a></li>
+          <li><a class="menu-link" href="#">Boarder Requests</a></li>
+          <li><a class="menu-link" href="#">Messages</a></li>
+          <li><a class="menu-link" href="#">Search</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+  <div class="container">
+  <!--                  first column                       -->
+    <div class="column1">
+      <div class="title top-title">Edit Profile</div>
+      <div class="l-box-1">
+        <form>
+          <div class="twoina-row">
+            <input type="text" name="firstname" placeholder="First Name">
+            <input type="text" name="lastname" placeholder="Last Name">
+          </div>
+          <div class="full-row"><input type="text" name="username" placeholder="Username"></br></div>
+          <div class="full-row"><input type="text" name="email" placeholder="Email Address"></br></div>
+        </form>
+        <div class="change-password"><a href="">Change Password</a></div>
+        <form>
+          <div class="twoina-row">
+            <input type="text" name="mainpicture" placeholder="">
+            <input type="text" name="coverpicture" placeholder="">
+          </div>
+          <div class="update-picture">
+            <input type= "button" value="Update Main Picture" id="main-picture-button"/><input type= "button" value="Update Cover Picture" id="cover-picture-button"/>
+          </div>
+        </form>
+      </div>
+      <div class="title">Basic Information</div>
+      <div class="l-box-2">
+        <div class="box-column1">
+          <form>
+            Profession:</br><input type="text" name="profession" placeholder=""></br>
+            Resides In:</br><input type="text" name="residesin" placeholder=""></br>
+            Hometown:</br><input type="text" name="hometown" placeholder=""></br>
+          </form>
+        </div>
+        <div class="box-column2">
+           <form>
+            Birthday:</br><input type="text" name="birthday" placeholder=""></br>
+            Skills:</br><input type="text" name="skills" placeholder=""></br>
+            Website:</br><input type="text" name="website" placeholder=""></br>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  <!--                  second column                       -->  
+    <div class="column2">
+      <div class="title top-title">Payment Information</div>
+      <div class="r-box-1">
+        <div class="box-column1">
+          <form action="">Bank Account for Raising Funds:</br>
+            <select name="country">
+              <option value="United States">United States of America</option>
+              <option value="England">England</option>
+              <option value="etc">etc</option>
+            </select>
+            <span class="change-link"><a href="">Change</a></span>
+          </form>
+        </div>
+        <div class="box-column2">
+          <div>Balanced Account<span class="configured-yes-or-no">Configured</span></br></div>
+          <a href="">What is this?</a>
+          <input type= "button" value="Change" id="change-button"/>
+        </div>
+        <div class="sub-row">
+          <form>
+            Credit/Debit Card for Investing</br><input type="text" name="investing-card" placeholder="">
+            <a href="">Change</a>
+          </form>
+        </div>
+      </div>
+      <div class="title">More Information</div>
+      <div class="r-box-2">
+        <form>
+          About Me<span>145 characters</span></br><textarea></textarea>
+          My Passions Are<span>145 characters</span></br><textarea></textarea>
+          My Dream Is<span>145 characters</span></br><textarea></textarea>
+        </form>
+      </div>
+      <div class="save-button-container"><input type= "button" value="Save Updated Information" id="save-button"/></div>
+    </div>
+
+  </div>
+
+  <footer>
+  </footer>
+
+  <script src="jQuery/jquery.js"></script>
+
+  <script src="scripts/navbar.js"></script>
+
+
+</body>
+</html>

@@ -59,6 +59,10 @@ html {
   color: #788586;
 }
 
+textarea {
+  font-family: helvetica;
+}
+
 #navbar {
   display: table;
   width:100%;

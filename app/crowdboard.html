@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CrowdBoarders</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/crowdboard.css" />
+</head>
+<body>
+<!--        NAVBAR      -->
+  <div id="navbar">
+    <ul class="opaque">
+      <li><a href="index.html">My Console</a></li>
+      <li><a href="districts.html">All Districts</a></li>
+      <li><a href="crowdnews.html">Crowd News</a></li>
+      <li id="cogs"><img src="images/cogs.png" />
+        <ul>
+          <li><a class="menu-link" href="#">Help</a></li>
+          <li><a class="menu-link" href="#">FAQ</a></li>
+          <li><a class="menu-link" href="#">Blog</a></li>
+          <li><a class="menu-link" href="#">Settings</a></li>
+          <li><a class="menu-link" href="#">Log Out</a></li>
+        </ul>
+      </li>
+      <form method="get" action="/search" id="search">
+       <input name="q" type="text" size="40" placeholder="Search..." />
+      </form>
+
+      <li class="menu-image"><a href=""><span>(3)</span><img src="images/crowd.png" /></a>
+        <ul class="requests-menu">
+          <li>Boarder Requests</li>
+          <li>
+            <div class="new-request">
+              <span class="new-friend"><a href="">George W. Bush</a></span> wants to be friends with you.
+              <div class="request-accept"><input type= "button" value="Accept" id="accept-button" /></div>
+              <div class="request-decline"> <input type= "button" value="Decline" id="decline-button"/></div>
+            </div>
+          </li>
+          <li><a class="menu-link" href="#">View All Boarder Requests</a></li>
+        </ul>
+      </li>
+
+      <li class="menu-image"><a href=""><span>(2)</span><img class="email" src="images/email.png" /></a>
+        <ul class="messages-menu">
+          <li>Messages</li>
+
+          <li class="boarder-message-li">
+              <div class="boarder-message href-div">
+                  <div class="boarder-message-image"><img src="images/selfportrait.png" /></div>
+                  <div class="boarder-message-timestamp">07/02/14 at 5:00PM</div>
+                  <div class="boarder-message-text"><div class="boarder-message-name">Matthew Aurich says</div>Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span> Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span>
+                  </div>
+              </div>
+          </li>
+
+          <li class="boarder-message-li">
+              <div class="boarder-message href-div"> 
+                  <div class="boarder-message-image"><img src="images/selfportrait.png" /></div>
+                  <div class="boarder-message-timestamp">07/02/14 at 5:00PM</div>
+                  <div class="boarder-message-text"><div class="boarder-message-name">Matthew Aurich says</div>Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span> Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span>
+                  </div>
+              </div>
+          </li>
+          <li><a class="menu-link" href="#">View All Messages</a></li>
+        </ul>
+      </li>
+
+      <li class="menu-image"><a href=""><span>(1)</span><img id="crowdboard-logo" src="images/crowdboarders.png" /></a>
+        <ul class="notifications-menu">
+          <li>Notifications</li>
+          <li>
+            <span class="new-notification"><span class="new-friend"><a href="">President Obama</a></span> is now friends with <span class="current-user"><a href="">Matthew Aurich</a></span>
+            </span>
+          </li>
+          <li><a class="menu-link" href="#">View All Notifications</a></li>
+        </ul>
+      </li>
+
+         <li class="navbar-responsive"><img src="images/menu.png" />
+        <ul>
+          <li><a class="menu-link" href="index.html">My Console</a></li>
+          <li><a class="menu-link" href="districts.html">All Districts</a></li>
+          <li><a class="menu-link" href="crowdnews.html">Crowd News</a></li>
+          <li><a class="menu-link" href="#">Notifications</a></li>
+          <li><a class="menu-link" href="#">Messages</a></li>
+          <li><a class="menu-link" href="#">Boarder Requests</a></li>
+          <li><a class="menu-link" href="#">Messages</a></li>
+          <li><a class="menu-link" href="#">Search</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+<!--       End of NAVBAR      -->
+<!--        First Row            -->
+
+
+  <div class = "container" id="first-row">
+    <div class = "crowdboard-banner">
+      <div class = "crowdboard-banner-picture"><img src="images/profilebanner.jpeg" />
+      </div>
+      <div class = "crowdboard-profile-picture"><img src="images/dkpicture.png" /></div>
+      <div class = "crowdboard-profile-name-tag"><span class= "crowdboard-profile-name">The Guards Museum</span></div>
+    </div>
+  </div>
+<!--        Main Body            -->
+  <div class = "container">
+    <div class = "main-body">
+     <!--        floating navigation            -->
+      <div class = "floating-column fixedElement">
+        <div class = "floating-first-row">
+          <span class="previous"><a href="">Previous</a></span>
+          <span class = "middle">District:<span class="district-tag"><a href="">Causes</a></span>Area:<span class="area-tag"><a href="">Military</a></span></span>
+          <span class="next"><a href="">Next</a></span>
+        </div>
+        <div class="crowdboard-mini-console">
+          <div class="crowdboard-measure">
+            <div class="crowdboard-status-bar"></div>
+            <div class="crowdboard-measure-text">
+              <div class="crowdboard-measure-level">Level</br><span>9</span></div>
+              <div class="crowdboard-measure-max-left">Max Left</br><span>$2,345</span></div>
+              <div class="crowdboard-measure-boarders-in">Boarders In</br><span>54,346</span></div>
+            </div>
+          </div>
+          <div class = "crowdboard-comment"><a href=""><img src="images/comment_no_bg.png" /><div class="comment-number">Comment 3,452</div></a></div>
+          <div class = "crowdboard-recommend"><a href=""><img src="images/crowdboarders.png" /><div class="recommend-number">Recommend 45,000</div></a></div>
+          <div class = "crowdboard-boost"><a href=""><img src="images/boost_no_bg.png" /><div class="boost-number">Boost 23,000</div></a></div>
+          <div class = "crowdboard-watch"><a href=""><img src="images/watch_no_bg.png" /><div class="watch-number">Watch 200,000</div></a></div>
+          <input type="button" value="INVEST!" id="invest-button" />
+        </div>
+        <div class="floating-last-box">
+          <span>What would you like to see?</span>
+          <div><a href="#more-information">More Information</a></div>
+          <div><a href="#media-links">Media Links</a></div>
+          <div><a href="#info-pack">Info Pack</a></div>
+          <div><a href="#performance-charts">Performance Charts</a></div>
+          <div><a href="#crowdboard-team">CrowdBoard Team</a></div>
+          <div><a href="#boarders-in">Boarders In</a></div>
+          <div><a href="#investment-levels">Investment Levels</a></div>
+          <div><a href="#crw">Comments/Watches/Recommends</a></div>
+
+        </div>
+      </div>
+      <!--        core content            -->
+      <div class = "main-column">
+        <!--        video content            -->
+        <div class = "crowdboard-video">
+          <a href = ""><img src = "images/crowdboard_video.png" /></a>
+          <div class = "crowdboard-play-button"><a href=""><img src = "images/play.png" /></a></div>
+        </div>
+        <!--        introductory content            -->
+        <div class = "introductory-box content-box">
+          <div class = "intro-first-row">
+            <span class = "left">CrowdBoard Type:<span class="crowdboard-type">Reward</span></span>
+            <span class = "middle">Seeking:<span class="crowdboard-seeking">$5,000,000</span></span>
+            <span class = "right">Priced from:<span class="crowdboard-priced">$30 - $1,500</span></span>
+          </div>
+          <div class = "intro-second-row">
+            Description:<span>The Guards Museum of London is building a memorial garden monument to commemorate the centenial of WW1 and the battles on Flanders Field.</span>
+          </div>
+        </div>
+        <!--        more information content            -->
+
+        <div class = "title"><a id="more-information">More Information</a></div>
+        <div class = "more-information-box content-box">
+          <div class= "sub-heading">Get Involved in the Guards Museum Today!</div>
+          <div class= "more-information-content">
+            Be part of history and have your name placed in the ‘Book of Honour’ being created by The Guards Museum close to Buckingham Palace. Show your appreciation to the hundreds of thousands of soldiers who perished in the First World War by donating to this Memorial that the millions of visitors to London can enjoy.</br></br>
+
+            The Flanders Fields Memorial Garden 1914-2014’ is an initiative by The Guards Museum and supported by Flanders House in London. The Garden will be located at Wellington Barracks alongside The Guards Chapel which is adjacent to Buckingham Palace. The Memorial is a gift from the people of Belgium to the British people and will be a unique opportunity not only to commemorate the 100th anniversary of the start of The Great War but also to thank the British people for their great sacrifice in the liberation of Belgium.</br></br>
+
+             The Memorial Garden has been designed by internationally acclaimed landscape architect Piet Blanckaert from Bruges, Belgium.</br>
+
+             <img src="images/moreinformation.png" />
+
+            Your support for the Memorial will help strengthen the historical ties between Britain and Belgium as this important project seeks to bring home soil from the 70 battlefield cemeteries where soldiers of the seven Guards regiments fought and died for freedom 100 years ago. Your help will allow people of all nationalities and especially school children, to pay their respects to these war heroes in London. The project has already become the template for similar garden projects in France, India and Australia. The project is supported wholeheartedly by the Flemish government, the House of Lords, the City of Westminster, the British Army and English Heritage.</br></br>
+
+             The Garden will be opened to the public during the Summer  with an official opening on the 6th of November  2014 in a unique and moving ceremony which it is hoped will be attended by both countries’ Royal Families.
+
+          </div>
+        </div>
+        <!--        media links content         Could stand to be refractored   -->
+
+        <div class = "title"><a id="media-links">Media Links</a></div>
+        <div class = "media-links-box content-box">
+          <div class="left">
+            <a href="">www.dk.com</a></br>
+            <a href="">www.twitter.com</a></br>
+            <a href="">www.twitter.com</a></br>
+            <a href="">www.youtube.com</a></br>
+            <a href="">www.instagram.com</a>
+          </div>
+          <div class="right">
+            <a href="">www.instagram.com</a></br>
+            <a href="">www.facebook.com</a></br>
+            <a href="">www.live.com</a></br>
+            <a href="">www.live.com</a>
+          </div>
+        </div>
+
+        <!--        info pack content      Could stand to be refractored      -->   
+
+        <div class = "title"><a id="info-pack">Info Pack</a></div>
+        <div class = "info-pack-box content-box">
+          <div class="left">
+            <a href="">test.pdf</a></br>
+            <a href="">Terms&Conditions.pdf</a></br>
+          </div>
+          <div class="right">
+            <a href="">Terms&Conditionsetcetcetc.pdf</a></br>
+            <a href="">Images.pdf</a></br>
+            <a href="">Images.pdf</a>
+          </div>
+        </div>
+
+        <!--        performance charts content            -->
+
+        <div class = "title"><a id="performance-charts">Performance Charts</a></div>
+        <div class = "performance-charts-box content-box">
+          <div class = "sub-heading">Performance Chart 1</div>
+            <div class = "chart"></div>
+          <div class = "sub-heading">Performance Chart 2</div>
+            <div class = "chart"></div>
+        </div>
+
+        <!--        crowdboard team content            -->
+
+        <div class = "title"><a id="crowdboard-team">CrowdBoard Team</a></div>
+        <div class = "crowdboard-team-box content-box">
+          <div class = "crowdboard-team-member">
+            <div class = "team-member-image"><img src = "images/selfportrait.png"></div></br>
+            <span class = "team-member-name">Matthew Aurich</span></br>
+            <span class = "team-member-position">Jack of all Trades</span>
+            <div class = "team-member-description">Matt Aurich is a person capable of anything etc... etc... etc... etc..
+            </div>
+          </div>
+          <div class = "crowdboard-team-member">
+            <div class = "team-member-image"><img src = "images/selfportrait.png"></div></br>
+            <span class = "team-member-name">Matthew Aurich</span></br>
+            <span class = "team-member-position">Jack of all Trades</span>
+            <div class = "team-member-description">Matt Aurich is a person capable of anything etc... etc... etc... etc..
+            </div>
+          </div>
+          <div class = "crowdboard-team-member">
+            <div class = "team-member-image"><img src = "images/selfportrait.png"></div></br>
+            <span class = "team-member-name">Matthew Kyle Aurich</span></br>
+            <span class = "team-member-position">The Jack of all Trades</span>
+            <div class = "team-member-description">Matt Aurich is a person capable of anything etc... etc... etc... etc..
+            </div>
+          </div>
+        </div>
+
+        <!--        boarders in content            -->
+
+        <div class = "title"><a id="boarders-in">Boarders In</a></div>
+        <div class = "boarders-in-box content-box">
+
+          <div class="boarder-lineup">
+            <div class="boarder-lineup-image">
+              <a href=""><img src="images/art.jpeg"></a>
+              <div class="boarder-name-container"><div class="boarder-name"><a href= "">Danny Keiman</a></div></div>
+            </div>
+            <div class="lineup-content">
+              <div class="boarder-location">Location:<span>Dallas</span></div>
+              <div class="boarder-profession">Profession:<span>CrowdBoarders</span></div>
+              <div class="boarder-districts">Districts:<span>Technology,</span><span>Green,</span><span>Eco,</span><span>Causes</span></div>
+              <div class="add-boarder"> <input type= "button" value="Add Boarder" id="add-boarder-button"/></div>
+            </div>
+          </div>
+
+          <div class="boarder-lineup">
+            <div class="boarder-lineup-image">
+              <a href=""><img src="images/art.jpeg"></a>
+              <div class="boarder-name-container"><div class="boarder-name"><a href= "">Danny Keiman</a></div></div>
+            </div>
+            <div class="lineup-content">
+              <div class="boarder-location">Location:<span>Dallas</span></div>
+              <div class="boarder-profession">Profession:<span>CrowdBoarders</span></div>
+              <div class="boarder-districts">Districts:<span>Technology,</span><span>Green,</span><span>Eco,</span><span>Causes</span></div>
+              <div class="add-boarder"> <input type= "button" value="Add Boarder" id="add-boarder-button"/></div>
+            </div>
+          </div>
+
+          <div class="boarder-lineup">
+            <div class="boarder-lineup-image">
+              <a href=""><img src="images/art.jpeg"></a>
+              <div class="boarder-name-container"><div class="boarder-name"><a href= "">Danny Keiman</a></div></div>
+            </div>
+            <div class="lineup-content">
+              <div class="boarder-location">Location:<span>Dallas</span></div>
+              <div class="boarder-profession">Profession:<span>CrowdBoarders</span></div>
+              <div class="boarder-districts">Districts:<span>Technology,</span><span>Green,</span><span>Eco,</span><span>Causes</span></div>
+              <div class="add-boarder"> <input type= "button" value="Add Boarder" id="add-boarder-button"/></div>
+            </div>
+          </div>
+
+          <div class="boarder-lineup">
+            <div class="boarder-lineup-image">
+              <a href=""><img src="images/art.jpeg"></a>
+              <div class="boarder-name-container"><div class="boarder-name"><a href= "">Danny Keiman</a></div></div>
+            </div>
+            <div class="lineup-content">
+              <div class="boarder-location">Location:<span>Dallas</span></div>
+              <div class="boarder-profession">Profession:<span>CrowdBoarders</span></div>
+              <div class="boarder-districts">Districts:<span>Technology,</span><span>Green,</span><span>Eco,</span><span>Causes</span></div>
+              <div class="add-boarder"> <input type= "button" value="Add Boarder" id="add-boarder-button"/></div>
+            </div>
+          </div>
+
+          <div class="boarder-lineup">
+            <div class="boarder-lineup-image">
+              <a href=""><img src="images/art.jpeg"></a>
+              <div class="boarder-name-container"><div class="boarder-name"><a href= "">Danny Keiman</a></div></div>
+            </div>
+            <div class="lineup-content">
+              <div class="boarder-location">Location:<span>Dallas</span></div>
+              <div class="boarder-profession">Profession:<span>CrowdBoarders</span></div>
+              <div class="boarder-districts">Districts:<span>Technology,</span><span>Green,</span><span>Eco,</span><span>Causes</span></div>
+              <div class="add-boarder"> <input type= "button" value="Add Boarder" id="add-boarder-button"/></div>
+            </div>
+          </div>
+
+        </div>
+        <!--        investment levels content            -->
+
+        <div class = "title"><a id="investment-levels">Investment Levels</a></div>
+        <div class = "investment-levels-box content-box">
+        </div>
+
+        <!--        comments/watches/recommends content            -->
+
+        <div class = "title"><a id="cwr">Comments/Watches/Recommends</a></div>
+        <div class = "cwr-box content-box">
+         <div class="newsfeed-message standard-newsfeed">
+          <div class="newsfeed-comment">
+            <div class = "newsfeed-image"><a href=""><img src="images/dkpicture.png" /></a></div>
+            <div class="message-attribution"><span class="boarder-message-name">Danny Kelman</span></div>
+           just invested in <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> 
+            </div>
+          </div>
+         <div class="newsfeed-message standard-newsfeed">
+          <div class="newsfeed-comment">
+            <div class = "newsfeed-image"><a href=""><img src="images/dkpicture.png" /></a></div>
+            <div class="message-attribution"><span class="boarder-message-name">Danny Kelman</span></div>
+           just watched <span class="district-tag"><a href='#'>@mkcrowdboard</a></span>
+          </div>
+        </div>
+         <div class="newsfeed-message standard-newsfeed">
+          <div class="newsfeed-comment">
+            <div class = "newsfeed-image"><a href=""><img src="images/dkpicture.png" /></a></div>
+            <div class="message-attribution"><span class="boarder-message-name">Danny Kelman</span></div>
+           just recommended <span class="district-tag"><a href='#'>@mkcrowdboard</a></span>
+          </div>
+        </div>
+        <div class="newsfeed-message standard-newsfeed">
+          <div class="newsfeed-comment">
+            <div class = "newsfeed-image"><a href=""><img src="images/dkpicture.png" /></a></div>
+            <div class="message-attribution"><span class="boarder-message-name">Danny Kelman</span></div>
+           just recommended <span class="district-tag"><a href='#'>@mkcrowdboard</a></span>
+          </div>
+        </div>
+        <div class="newsfeed-message standard-newsfeed">
+          <div class="newsfeed-comment">
+            <div class = "newsfeed-image"><a href=""><img src="images/dkpicture.png" /></a></div>
+            <div class="message-attribution"><span class="boarder-message-name">Danny Kelman</span></div>
+           just recommended <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> 
+          </div>
+        </div>
+
+        </div>
+
+      </div>
+    </div> 
+  </div>
+
+
+  <footer>
+  </footer>
+
+  <script src="jQuery/jquery.js"></script>
+
+  <script src="scripts/navbar.js"></script>
+  <script src="scripts/crowdboard.js"></script>
+
+
+</body>
+</html>

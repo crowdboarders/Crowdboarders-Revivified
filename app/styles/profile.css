@@ -100,8 +100,8 @@ html {
 		margin-bottom: 8px;
 		margin-left: .2%;
 		height: 155px;
-		padding: 12px;
-		overflow: scroll;
+		padding: 11px;
+		overflow: auto;
 		font-weight: 600;
 		line-height: 1.33em;
 		font-size: .9em;
@@ -124,7 +124,7 @@ html {
     	margin-left: .2%;
     	background-color: #FBFBFB;
     	border-radius: 2px;
-    	overflow:scroll;
+    	overflow:auto;
     	font-weight: 600;
     	font-size: .9em;
     	line-height: 1.2em;
@@ -145,7 +145,7 @@ html {
     	margin-left: .2%;
     	background-color: #FBFBFB;
     	border-radius: 2px;
-    	overflow: scroll;
+    	overflow: auto;
     	-webkit-box-shadow:    0 0 6px rgba(150, 149, 150, 1);
         	    box-shadow:    0 0 6px rgba(150, 149, 150, 1);
 	}	
