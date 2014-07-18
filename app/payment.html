@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" href="styles/main.css" />
-  <link rel="stylesheet" href="styles/myconsole.css" />
-  <link rel="stylesheet" href="styles/profile.css" />
+  <link rel="stylesheet" href="styles/payment.css" />
 </head>
 <body>
 <!--        NAVBAR      -->
   <div id="navbar">
-    <ul>
-      <li><a class="focus" href="index.html">My Console</a></li>
+    <ul class="opaque">
+      <li><a href="index.html">My Console</a></li>
       <li><a href="districts.html">All Districts</a></li>
       <li><a href="crowdnews.html">Crowd News</a></li>
       <li id="cogs"><img src="images/cogs.png" />
@@ -93,69 +92,42 @@
     </ul>
   </div>
 <!--       End of NAVBAR      -->
-<!--        First Row            -->
-  <div class="container" id="first-row">
-    <div class="profile-banner">
-      <div class="banner-picture"><img src="images/profilebanner.jpeg" />
-      </div>
+  <div class = "container">
+    <div class = "title">Make Your Investment Securely</div>
+    <div class = "payment-details">
+      <span class="level-amnt">Level Amount<input type="text" name="level-amount" placeholder="">USD</span>
+      <span class="fees">CrowdBoarders Fees<input type="text" name="crowdboarders-fees" placeholder="">USD</span>
     </div>
-    <div class = "profile-picture"><img src="images/dkpicture.png" />
+    <div class = "payment-details">
+      <span class="payment-amount">You will have to pay<input type="text" name="payment-amount" placeholder="">USD</span>
+    </div>
+    <div class = "pay-with-current-card">Pay with the Card on your account
+      <span class="card-on-account">American Express ending in 0057</span>
+      <div class="invest-button"><input type= "button" value="Invest!" id="invest-button"/></div>
+    </div>
+    <div class = "pay-with-new-card">
+      <div><span class = "sub-heading">Pay with Credit Card<img src="images/creditcardlogos.jpg" /></div>
+        <form>
+          <div class="oneina-row">
+            Name on Card</br><input type="text" name="name-on-card" placeholder=""></br>
+          </div>
+          <div class="twoina-row">
+            <div class="card-number">Card Number</br><input type="text" name="card-number" placeholder=""></br></div>
+            <div class="security">Securty Code</br><input type="text" name="securty-code" placeholder="071"></br></div>
+          </div>
+          <div class="expiration-row">
+            Expiration Date</br>
+            <div class="month"><input type="text" name="expiration-date-month" placeholder="04"></div>
+            <div class="year"><input type="text" name="expiration-date-year" placeholder="2017"></div>
+            <div class="investment-button"><input type= "button" value="Invest!" id="invest-button"/></div>
+          </div>
+        </form>
+    </div>
+    <div class="balanced">All our payments are processed securely by<a href="http://www.balancedpayments.com"><img src="images/balanced.jpg" /></a></div>
   </div>
 
-<!--       End of First Row      -->
-<!--       Second Row      -->
-  <div class="container" id="second-row">
-    <!--       First Column      -->
-    <div class="col1">
-      <div class="profile-name">DK</div>
-      <div class="add-boarder"><input type= "button" value="Add" id="add-button" /></div>
-      <div class="my-activity"><a href="profile.html">My Activity</a></div>
-      <div class="my-boardfolio"><a href="myboardfolio.html">My Boardfolio</a><span class="boardfolio-number">(4)</span></div>
-      <div class="my-districts"><a href="mydistricts.html">My Districts</a><span class="districts-number">(1)</span></div>
-      <div class="my-areas"><a href="myareas.html">My Areas</a><span class="areas-number"></span>(2)</div>
-      <div class="my-crowdboards"><a href="mycrowdboards.html">My CrowdBoards</a><span class="crowdboards-number">(3)</span></div>
-      <div class="my-lineup"><a href="myboarderslineup.html">Boarders Lineup</a><span class="linup-number">(5)</span></div>
-    </div>
-    <!--       Second Column      -->
-    <div class="row-container">
-      <div class="col2">
-        <div class="name">Name:<span>Danny Kelman</span></div>
-        <div class="profession">Profession:<span>CrowdBoarder</span></div>
-        <div class="resides">Resides In:<span>Dallas TX</span></div>
-        <div class="hometown">Hometown:<span>Birmingham England</span></div>
-        <div class="birthday">Birthday:<span>OCT 22</span></div>
-        <div class="skills">Skills:<span>Creativity</span></div>
-        <div class="website">Website:<span>www.crowdboarders.com</span></div>
-      </div>
-      <!--       Third Column      -->
-      <div class="col3">
-        <div class="about-me">About Me:<div>I am a young passionate individual who looks to change the world.</div>
-        </div>
-        <div class="passions">My Passions Are:<div>Health love and wealth</div>
-        </div>
-        <div class="dreams">My Dream is:<div>To turn the world into CrowdBoarders</div>
-        </div>
-      </div>
-    </div>
-    <!--       Fourth Column      -->
-    <div class="col4"> <span class="profile-name">DK's </span><span class="page-name">Districts</span>
-      <div class="col4-container">
-        <a href=""><div class="district"><img src="images/art.jpeg"><span class="DAcontent">Art</span></div></a>
-        <a href=""><div class="district"><img src="images/causes.jpg"><span class="DAcontent">Causes</span></div></a>
-        <a href=""><div class="district"><img src="images/gaming.jpeg"><span class="DAcontent">Gaming</span></div></a>
-        <a href=""><div class="district"><img src="images/green.jpeg"><span class="DAcontent">Green</span></div></a>
-        <a href=""><div class="district"><img src="images/tech.jpeg"><span class="DAcontent">Tech</span></div></a>
-        <a href=""><div class="district"><img src="images/theatre.jpeg"><span class="DAcontent">Theatre</span></div></a>
-        <a href=""><div class="district"><img src="images/art.jpeg"><span class="DAcontent">Art</span></div></a>
-        <a href=""><div class="district"><img src="images/causes.jpg"><span class="DAcontent">Causes</span></div></a>
-        <a href=""><div class="district"><img src="images/gaming.jpeg"><span class="DAcontent">Gaming</span></div></a>
-        <a href=""><div class="district"><img src="images/green.jpeg"><span class="DAcontent">Green</span></div></a>
-        <a href=""><div class="district"><img src="images/tech.jpeg"><span class="DAcontent">Tech</span></div></a>
-        <a href=""><div class="district"><img src="images/theatre.jpeg"><span class="DAcontent">Theatre</span></div></a>        
-      </div>
-    </div>
 
-  </div>
+
 
 
   <footer>
@@ -164,7 +136,8 @@
   <script src="jQuery/jquery.js"></script>
 
   <script src="scripts/navbar.js"></script>
-  <script src="scripts/main.js"></script>
+  <script src="scripts/crowdboard.js"></script>
+
 
 </body>
 </html>

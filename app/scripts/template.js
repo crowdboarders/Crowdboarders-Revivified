@@ -1,11 +1,11 @@
 $(window).scroll(function(){ 
   $el = $('.fixedElement'); 
-	if ($(this).scrollTop() > 380 && $el.css('position') == 'absolute') {
-		$('.fixedElement').css({'top': $(window).scrollTop() - 370, 'right':'0px'}); 
+	if ($(this).scrollTop() > 0 && $el.css('position') == 'absolute') {
+		$('.fixedElement').css({'top': $(window).scrollTop() + 56, 'right':'0px'}); 
 	} 
 
-	if ($(this).scrollTop() < 380 && $el.css('position') == 'absolute') {
-		$('.fixedElement').css({'top': '12px', 'right':'0px'}); 
+	if ($(this).scrollTop() < 0 && $el.css('position') == 'absolute') {
+		$('.fixedElement').css({'top': '56px', 'right':'0px'}); 
 	} 
 
 	if ($(this).scrollTop() > 5 && $el.css('position') == 'absolute') {

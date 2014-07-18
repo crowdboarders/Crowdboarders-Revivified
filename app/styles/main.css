@@ -1,4 +1,4 @@
-/*** RESET CODE ****/
+col/*** RESET CODE ****/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -461,6 +461,10 @@ textarea {
         -webkit-box-shadow: 0 0 2px rgba(150, 149, 150, 1);
                 box-shadow: 0 0 2px rgba(150, 149, 150, 1);
       }
+      .command-center a {
+        text-decoration: none;
+      }
+
     #boarder-number {
       position: absolute;
       top: 10px;
@@ -884,7 +888,7 @@ textarea {
         display:block;
         margin-left: auto;
         margin-right: auto;
-        font-size: 16px !important;
+        font-size: 16px;
         font-weight: 600;
         background-color: #72B2C7;
         color: #fff;
@@ -911,7 +915,7 @@ textarea {
       .crowdboard-text span, .crowdboard-text div div {
         font-weight: 400;
       }
-      #view-crowdboard-button {
+      #view-crowdboard-button, #insider-news-button, #insider-details-button {
       display:block;
       margin-left: auto;
       margin-right: auto;
@@ -991,7 +995,7 @@ footer {
 } 
 .crowdboard-mini-console img:hover {
   -webkit-box-shadow: 0 0 4px rgba(60, 108, 121, 1);
-          box-shadow: 0 0 4px rgba(60, 108, 121, 1);
+s
 }
 .poster-options img:hover {
  -webkit-box-shadow: 0 0 5px rgba(60, 108, 121, 1);
@@ -1002,7 +1006,7 @@ footer {
     background-color: #3C6C79;
   }
 
-  #create-crowdboard-button:hover, #view-crowdboard-button:hover, .crowdboard-profile-picture:hover ~ #view-crowdboard-button {
+  #create-crowdboard-button:hover, #view-crowdboard-button:hover, .crowdboard-profile-picture:hover ~ a #view-crowdboard-button, #insider-news-button:hover, #insider-details-button:hover  {
     background-color: #3C6C79;
     border: 1px solid #fff;
     color: #fff;
@@ -1020,9 +1024,7 @@ footer {
   }
 
     .crowdboard-video:hover .play-button {
-               -webkit-box-shadow: 0 0 8px rgba(117, 180, 198, 1);
-          box-shadow: 0 0 8px rgba(117, 180, 198, 1);
-          border: 2px solid rgba(117, 180, 198, .1);
+          border: 2px solid rgba(255, 255, 255, 0);
       }
 
 
@@ -1056,6 +1058,12 @@ footer {
 @media only screen and (min-width: 1400px) {
   .container{
     width: 1400px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .container {
+    width: 1600px;
   }
 }
 

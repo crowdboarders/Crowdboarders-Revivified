@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CrowdBoarders</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/createcrowdboard.css" />
+</head>
+<body>
+
+  <!--   NAVBAR -->
+
+  <div id="navbar">
+    <ul>
+      <li><a class="focus" href="../index.html">My Console</a></li>
+      <li><a href="../districts.html">All Districts</a></li>
+      <li><a href="../crowdnews.html">Crowd News</a></li>
+      <li id="cogs"><img src="../images/cogs.png" />
+        <ul>
+          <li><a class="menu-link" href="">Help</a></li>
+          <li><a class="menu-link" href="">FAQ</a></li>
+          <li><a class="menu-link" href="">Blog</a></li>
+          <li><a class="menu-link" href="">Settings</a></li>
+          <li><a class="menu-link" href="../login.html">Log Out</a></li>
+        </ul>
+      </li>
+      <form method="get" action="/search" id="search">
+       <input name="q" type="text" size="40" placeholder="Search..." />
+      </form>
+
+      <li class="menu-image"><a href=""><span>(3)</span><img src="../images/crowd.png" /></a>
+        <ul class="requests-menu">
+          <li>Boarder Requests</li>
+          <li>
+            <div class="new-request">
+              <span class="new-friend"><a href="">George W. Bush</a></span> wants to be friends with you.
+              <div class="request-accept"><input type= "button" value="Accept" id="accept-button" /></div>
+              <div class="request-decline"> <input type= "button" value="Decline" id="decline-button"/></div>
+            </div>
+          </li>
+          <li><a class="menu-link" href="">View All Boarder Requests</a></li>
+        </ul>
+      </li>
+
+      <li class="menu-image"><a href=""><span>(2)</span><img class="email" src="../images/email.png" /></a>
+        <ul class="messages-menu">
+          <li>Messages</li>
+
+          <li class="boarder-message-li">
+              <div class="boarder-message href-div">
+                  <div class="boarder-message-image"><img src="../images/selfportrait.png" /></div>
+                  <div class="boarder-message-timestamp">07/02/14 at 5:00PM</div>
+                  <div class="boarder-message-text"><div class="boarder-message-name">Matthew Aurich says</div>Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="">@technologyarea</a></span> Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="">@technologyarea</a></span>
+                  </div>
+              </div>
+          </li>
+
+          <li class="boarder-message-li">
+              <div class="boarder-message href-div"> 
+                  <div class="boarder-message-image"><img src="../images/selfportrait.png" /></div>
+                  <div class="boarder-message-timestamp">07/02/14 at 5:00PM</div>
+                  <div class="boarder-message-text"><div class="boarder-message-name">Matthew Aurich says</div>Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="">@technologyarea</a></span> Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="">@technologyarea</a></span>
+                  </div>
+              </div>
+          </li>
+          <li><a class="menu-link" href="">View All Messages</a></li>
+        </ul>
+      </li>
+
+      <li class="menu-image"><a href=""><span>(1)</span><img id="crowdboard-logo" src="../images/crowdboarders.png" /></a>
+        <ul class="notifications-menu">
+          <li>Notifications</li>
+          <li>
+            <span class="new-notification"><span class="new-friend"><a href="">President Obama</a></span> is now friends with <span class="current-user"><a href="">Matthew Aurich</a></span>
+            </span>
+          </li>
+          <li><a class="menu-link" href="">View All Notifications</a></li>
+        </ul>
+      </li>
+
+         <li class="navbar-responsive"><img src="../images/menu.png" />
+        <ul>
+          <li><a class="menu-link" href="../index.html">My Console</a></li>
+          <li><a class="menu-link" href="../districts.html">All Districts</a></li>
+          <li><a class="menu-link" href="">Crowd News</a></li>
+          <li><a class="menu-link" href="">Notifications</a></li>
+          <li><a class="menu-link" href="">Messages</a></li>
+          <li><a class="menu-link" href="">Boarder Requests</a></li>
+          <li><a class="menu-link" href="">Messages</a></li>
+          <li><a class="menu-link" href="">Search</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+  <!--          End of NAVBAR             -->
+  <div class = "container">
+    <div class = "accordianNew"></div>
+    <div class = "accordianNew">
+      <div class = "step-title">Step One:<a href = "createcrowdboardstep1.html">Choose Type</a></div>
+    </div>
+    <div class = "accordian-body">
+      <div class = "step-title">Step Two:<a href = "createcrowdboardstep2.html">Enter Details</a></div>
+      <div class = "crowdboard-details-container">
+        <div class = "left-portion">
+          <div class = "first-row">Upload Picture<input type="text" name="uploadpicture" placeholder = "" /><a href="">Select</a></div>
+          <div class = "second-row">
+            <div class = "picture-frame"><span>350x350</span><div class = "name-crowdboard"><input type = "text" name = "namecrowdboard" placeholder = "Name your CrowdBoard" /></div></div>
+          </div>
+          <div class = "third-row">
+            <div class = "description">
+              <span>Description</span>
+              <textarea placeholder = "About your CrowdBoard"></textarea>
+              <span>145 characters</span>
+            </div>
+          </div>
+          <div class = "fourth-row">
+            Location<input type = "text" name = "city" placeholder = "City" /><input type = "text" name = "state/country" placeholder = "state or country" />
+          </div>
+          <div class = "fifth-row">
+            Set your target amount to raise<input type = "text" name = "targetamont" placeholder = "" />
+          </div>
+          <div class = "sixth-row">
+            Select District<input type = "button" value = "See Districts" id= "see-district-button" />
+          </div>
+          <div class = "bottom-right-corner">
+            <input type = "button" value = "Next Step" id= "next-step-button" />
+          </div>
+        </div>
+        <div class = "right-portion">
+          <div class = "preview-container">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+
+    <div class = "accordianNew">
+      <div class = "step-title">Step Three:<a href = "createcrowdboardstep3.html">Set Levels</a></div>
+    </div>
+    <div class = "accordianNew">
+      <div class = "step-title">Step Four:<a href = "createcrowdboardstep4.html">See Preview</a></div>
+    </div>
+  </div>
+
+
+</body>
+</html>

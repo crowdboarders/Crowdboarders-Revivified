@@ -1,9 +1,15 @@
 html {
 	font-size: 1em;
 }
+a {
+	text-decoration: none;
+}
 
 .container {
 	background: none;
+	position: relative;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 #navbar {
@@ -19,13 +25,14 @@ html {
 
 .main-body {
 	background: #FBFBFB;
-	width: 100%;
-	height: 100%;
-	border-radius: 3px;
-	margin-top: 8px;
+	width: 69%;
+	min-height: 30px ;
+	border-radius: 5px;
+	margin-top: 12px;
 	padding-bottom: 40px;
-	-webkit-box-shadow:   0 0 6px rgba(150, 149, 150, 1);
-    		box-shadow:   0 0 6px rgba(150, 149, 150, 1);
+	-webkit-box-shadow:   0 0 8px rgba(150, 149, 150, 1);
+    		box-shadow:   0 0 8px rgba(150, 149, 150, 1);
+
 }
 
 #more-information {
@@ -38,8 +45,9 @@ html {
 }
 
 	.crowdboard-banner {
-		width:100%;
+		width:100.78%;
 		margin-top: 54px;
+		margin-left: -5px;
 		height: 375px;
 		background: #FBFBFB;
     	border-radius: 3px;
@@ -58,6 +66,7 @@ html {
 			margin-top: 15px;
 			font-weight: 600;
 			white-space: nowrap;
+			color: #4D4D4D;
 		}
 		.crowdboard-banner .crowdboard-profile-name {
 			font-weight: 600;
@@ -84,16 +93,17 @@ html {
 ----------------------------------------------------------------------------- */
 	.floating-column {
 		position: absolute;
-		height: 580px;
+		height: 540px;
 		background: #F8FCFC;
 		width: 383px;
 		-webkit-box-shadow: 0 0 3px rgba(150, 149, 150, 1);
     			box-shadow: 0 0 3px rgba(150, 149, 150, 1);
 	}
 	.fixedElement {
-		right: 55px;
-		top: 450px;
 		position: absolute;
+		right: 0px;
+		top: 12px;
+		
 	}
 		.floating-first-row {
 			font-weight: 600;
@@ -128,7 +138,7 @@ html {
 	.crowdboard-mini-console {
 	    margin:0;
 	    width: 100%;
-	    height: 298px;
+	    height: 258px;
 	    position: relative;
 
  	 }
@@ -139,7 +149,7 @@ html {
  	 .crowdboard-mini-console .crowdboard-comment {
  	 	background-color: #778586;
  	 	float: left;
- 	 	height: 57px;
+ 	 	height: 47px;
     	width: 80px;
     	margin-bottom: 4px;
     	margin-top: 4px;
@@ -150,47 +160,47 @@ html {
  	 .crowdboard-mini-console .crowdboard-recommend {
  	 	background-color: #72B2C7;
  	 	float: left;
- 	 	height: 57px;
+ 	 	height: 47px;
     	width: 80px;
     	margin-bottom: 4px;
  	 }
  	 .crowdboard-mini-console .crowdboard-boost {
  	 	background-color: #48A88D;
  	 	float:left;
- 	 	height: 57px;
+ 	 	height: 47px;
     	width: 80px;
     	margin-bottom: 4px;
  	 }
  	 .crowdboard-mini-console .crowdboard-watch {
  	 	background-color: #778586;
  	 	float: left;
- 	 	height: 57px;
+ 	 	height: 47px;
     	width: 80px;
  	 }
 
     .crowdboard-mini-console .comment-number {
-      top: 52px;
+      top: 42px;
       left: 3px;
     }
     .crowdboard-mini-console .recommend-number {
-      top: 113px;
+      top: 93px;
       left: 3px;
     }
     .crowdboard-mini-console .boost-number {
-      top: 174px;
+      top: 144px;
       left: 3px;
     }
     .crowdboard-mini-console .watch-number {
-      top: 235px;
+      top: 195px;
       left: 3px;
     }
 
   .crowdboard-mini-console img {
     display:block;
-    height: 37px;
+    height: 30px;
     width: 60px;
     margin-right: 10px;
-    margin-top: 7px;
+    margin-top: 5px;
     float: right;
   }
   .crowdboard-mini-console img:first-child {
@@ -198,7 +208,7 @@ html {
    
   .crowdboard-measure {
     background: #778586;
-    height: 240px;
+    height: 201px;
     width: 298px;
     margin-top: 3px;
     margin-bottom: 4px;
@@ -209,19 +219,19 @@ html {
   .crowdboard-status-bar {
     position: absolute;
     top: 20px;
-    left: 41px;
+    left: 36px;
     width: 18px;
-    height: 195px;
+    height: 160px;
     background:#fff;
   }
 
   .crowdboard-measure-text {
     float: left;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2em;
     color:#fff;
-    margin-top: 25px;
-    margin-left: 95px;
+    margin-top: 15px;
+    margin-left: 85px;
   }
     .crowdboard-measure-text span {
       font-weight: 100;
@@ -265,7 +275,7 @@ html {
 /* Main Column
 ----------------------------------------------------------------------------- */
 	.main-column {
-		width: 60%;
+		width: 90%;
 		margin-left: 52px;
 		padding-top: 13px;
 	}
@@ -337,11 +347,13 @@ html {
 	.intro-first-row {
 		text-align: center;
 		font-weight: 600;
+		color: #4D4D4D;
 	}
 
 	.intro-first-row span span {
 		margin-left: 5px;
 		font-weight: 400;
+		color: #778586;
 	}
 
 	.intro-first-row .left {
@@ -354,11 +366,13 @@ html {
 	.intro-second-row {
 		margin-top: 40px;
 		font-weight: 600;
+		color: #4D4D4D;
 	}
 
 	.intro-second-row span {
 		margin-left: 5px;
 		font-weight: 400;
+		color: #778586;
 	}
 
 	/*  <!--        more information content            -->  ------------------------------------------------------------ */
@@ -449,24 +463,26 @@ html {
 	}
 
 	.crowdboard-team-member {
-		width: 32%;
-		margin-left: 1%;
-		min-height: 380px;
-		border-radius: 2px;
-		border: 1px solid #7E8A8B;
+		width: 48.5%;
+		margin-left: 1.5%;
+		margin-bottom: 12px;
+		min-height: 190px;
+		border-radius: 4px;
 		background: #F8F8F8;
 		float: left;
-		text-align: center;
-		padding: 4px;
-		-webkit-box-shadow:   0 0 6px rgba(150, 149, 150, .5);
-    	      	box-shadow:   0 0 6px rgba(150, 149, 150, .5);
+		padding: 5px;
+		-webkit-box-shadow:   0 0 6px rgba(150, 149, 150, 1);
+    	      	box-shadow:   0 0 6px rgba(150, 149, 150, 1);
+    	font-weight: 600;
+    	color: #4D4D4D;
 	}
 
 	.crowdboard-team-member .team-member-image {
-		display: inline-block;
-		width: 180px;
-		height: 120px;
-		padding: 6px 30px;
+		float: left;
+		width: 110px;
+		height: 110px;
+		padding: 6px 6px;
+		margin-right: 5px;
 		border-radius: 2px;
 		background: #fff;
     	-webkit-box-shadow:   0 0 6px rgba(150, 149, 150, .2);
@@ -480,26 +496,37 @@ html {
 		height: 100%;
 	}
 
-	.team-member-name {
-		font-size: 24px;
-	}
-	.team-member-position {
-		font-style: oblique;
+	.crowdboard-team-member .top-margin {
 		margin-top: 10px;
-		display: block;
-		font-size: 22px;
+		margin-bottom: 5px;
+	}
+
+	.team-member-name, .team-member-position {
+		font-weight: 400;
+		line-height: 1.2em;
+		color: #778586;
+
+	}
+	
+	.team-member-name:before {
+		content: " ";
+	}
+	.team-member-position:before {
+		content: " ";
 	}
 	.team-member-description {
+		font-weight: 400;
+		clear: both;
 		line-height: 1.2em;
-		min-height: 167px;
+		height: 100%;
 		margin-top: 20px;
 		text-align: left;
 		font-size: 18px;
-		border-radius: 2px;
-		background: #fff;
-		padding: 4px;
-    	-webkit-box-shadow:   0 0 6px rgba(150, 149, 150, .2);
-            	box-shadow:   0 0 6px rgba(150, 149, 150, .2);
+		padding-left: 8px;
+		padding-right: 8px;
+		padding-bottom: 8px;
+		color: #778586;
+
 	}
 
 
@@ -598,6 +625,58 @@ html {
 		
 
 	/*  <!--        investment levels content            -->  ------------------------------------------------------------ */
+		.investment-levels-box {
+
+		}
+
+
+		.level-container {
+			position: relative;
+			float: left;
+			width: 100%;
+			min-height: 100px;
+			margin-right: 8px;
+			margin-bottom: 8px;
+			padding: 12px;
+			padding-bottom: 16px;
+			border-radius: 5px;
+		   	-webkit-box-shadow: 0 0 8px rgba(150, 149, 150, 1);
+              	    box-shadow: 0 0 8px rgba(150, 149, 150, 1); 
+		}
+		.level-core-content {
+			float: left;
+			width: 62%;
+		}
+		.level-name {
+			color: #4F4F4F;
+			font-size: 24px;
+			margin-left: 5px;
+			line-height: 2em;
+		}
+		.level-description {
+			font-size: 16px;
+			line-height: 1.2em;
+		}
+		.level-action-area {
+			position: absolute;
+			bottom: 12px;
+			right: 8px;
+			text-align: center;
+			width: 36%;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		.level-price {
+			margin-bottom: 10px;
+			font-size: 45px;
+			letter-spacing: -1px;
+			color: #4F4F4F;
+		}
+ 		.level-invest {}
+ 		.level-container #invest-button {
+ 			width: 80%;
+ 		}
+
 
 	/*  <!--        comments/watches/recommends content            -->  ------------------------------------------------------------ */
 
