@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 
   $("div.href-div").click(function () {
-      window.location.href = '#'; 
+      window.location.href = 'myareas.html'; 
   });
 
 });

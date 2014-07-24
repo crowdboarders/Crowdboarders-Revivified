@@ -23,7 +23,7 @@
 	text-decoration: none;
 	color: #75B4C6;
 	font-weight: 100;
-	font-size: 26px;
+	font-size: 22px;
 	margin-left: 20px;
 }
 
@@ -129,7 +129,7 @@
 		.add-boarder {
 
 		}
-		#add-boarder-button {
+		#add-boarder-button, #remove-from-lineup-button, #add-to-lineup-button {
 			position: absolute;
 			bottom: 6px;
 			right: 12px;
@@ -153,12 +153,98 @@
 	color: rgba(117, 180, 198, .6);
 }
 
+	#remove-from-lineup-button {
+			
+	        padding: 7px 2px 8px;
+	        font-size: 12px;    
+	}
 
+/* ---------------------------  Find Friends ------------------------- */
+
+.find-friends {
+	padding-bottom: 80px;
+
+}
+
+	.find-friends .title {
+		font-size: 28px;
+		margin-bottom: 28px;
+		margin-left: 10px;
+
+	}
+
+	.find-friends .connect-central {
+		padding-left: 40px;
+	}
+	.find-friends .connect-central div {
+		float: left;
+		font-size: 24px;
+		margin-right: 22px;
+		width: 400px;
+		margin-bottom: 15px;
+	}
+	.find-friends .connect-central div img {
+		height: 80px;
+		width: 80px;
+		margin-right: 8px;
+	}
+	.find-friends .connect-central .connect-button {
+		margin-right: 30px;
+		margin-top: 40px;
+		float: right;
+
+	}
+
+
+	.find-friends .connect-via-email {
+		clear:both;
+	}
+	.find-friends .connect-via-email .title {
+		line-height: 2em;
+		margin-bottom: 0;
+	}
+	.find-friends .connect-via-email form {
+		width: 40%;
+		margin-left: 380px;
+	}
+	.find-friends .connect-via-email form span {
+		float: right;
+		font-style: oblique;
+		margin-bottom: 2px;
+		margin-right: 10px;
+	}
+	.find-friends .connect-via-email form textarea {
+		height: 230px;
+	}
+	.find-friends .connect-via-email input {
+		margin-left: 20px;
+		margin-top: 180px;
+	}
+
+	.connect-button {
+
+	        padding: 12px 14px 14px;
+	        font-size: 20px;    
+	        font-weight: 600;
+	        background-color: #75B4C6;
+	        color: #ffffff;
+	        border-radius: 5px;
+	        -moz-border-radius: 5px;
+	        -webkit-border-radius: 5px;
+	        border: none;
+	        cursor: pointer;
+	        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	          -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	          -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+
+	}
+
+
+/* ----------- Pseudo Code ------------- */
 .boarder-lineup-image .boarder-name a:hover {
 	color: rgba(117, 180, 198, .6);
 }
 
-#add-boarder-button:hover {
+#add-boarder-button:hover, .connect-button:hover, #remove-from-lineup-button:hover, #add-to-lineup-button:hover {
 	background: #3C6C79;
 }
-

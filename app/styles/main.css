@@ -915,7 +915,7 @@ textarea {
       .crowdboard-text span, .crowdboard-text div div {
         font-weight: 400;
       }
-      #view-crowdboard-button, #insider-news-button, #insider-details-button {
+      #view-crowdboard-button, #insider-news-button, #insider-details-button, #my-boardersin-button, #crowdboard-management-button, #edit-crowdboard-button {
       display:block;
       margin-left: auto;
       margin-right: auto;
@@ -1006,7 +1006,7 @@ s
     background-color: #3C6C79;
   }
 
-  #create-crowdboard-button:hover, #view-crowdboard-button:hover, .crowdboard-profile-picture:hover ~ a #view-crowdboard-button, #insider-news-button:hover, #insider-details-button:hover  {
+  #create-crowdboard-button:hover, #view-crowdboard-button:hover, .crowdboard-profile-picture:hover ~ a #view-crowdboard-button, #insider-news-button:hover, #insider-details-button:hover, #my-boardersin-button:hover, #crowdboard-management-button:hover , #edit-crowdboard-button:hover  {
     background-color: #3C6C79;
     border: 1px solid #fff;
     color: #fff;

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CrowdBoarders</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/editmanageupdate.css" />
+</head>
+<body>
+  <div id="navbar">
+    <ul>
+      <li><a class="focus" href="index.html">My Console</a></li>
+      <li><a href="districts.html">All Districts</a></li>
+      <li><a href="crowdnews.html">Crowd News</a></li>
+      <li id="cogs"><img src="images/cogs.png" />
+        <ul>
+          <li><a class="menu-link" href="#">Help</a></li>
+          <li><a class="menu-link" href="#">FAQ</a></li>
+          <li><a class="menu-link" href="#">Blog</a></li>
+          <li><a class="menu-link" href="#">Settings</a></li>
+          <li><a class="menu-link" href="login.html">Log Out</a></li>
+        </ul>
+      </li>
+      <form method="get" action="/search" id="search">
+       <input name="q" type="text" size="40" placeholder="Search..." />
+      </form>
+
+      <li class="menu-image"><a href=""><span>(3)</span><img src="images/crowd.png" /></a>
+        <ul class="requests-menu">
+          <li>Boarder Requests</li>
+          <li>
+            <div class="new-request">
+              <span class="new-friend"><a href="">George W. Bush</a></span> wants to be friends with you.
+              <div class="request-accept"><input type= "button" value="Accept" id="accept-button" /></div>
+              <div class="request-decline"> <input type= "button" value="Decline" id="decline-button"/></div>
+            </div>
+          </li>
+          <li><a class="menu-link" href="#">View All Boarder Requests</a></li>
+        </ul>
+      </li>
+
+      <li class="menu-image"><a href=""><span>(2)</span><img class="email" src="images/email.png" /></a>
+        <ul class="messages-menu">
+          <li>Messages</li>
+
+          <li class="boarder-message-li">
+              <div class="boarder-message href-div">
+                  <div class="boarder-message-image"><img src="images/selfportrait.png" /></div>
+                  <div class="boarder-message-timestamp">07/02/14 at 5:00PM</div>
+                  <div class="boarder-message-text"><div class="boarder-message-name">Matthew Aurich says</div>Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span> Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span>
+                  </div>
+              </div>
+          </li>
+
+          <li class="boarder-message-li">
+              <div class="boarder-message href-div"> 
+                  <div class="boarder-message-image"><img src="images/selfportrait.png" /></div>
+                  <div class="boarder-message-timestamp">07/02/14 at 5:00PM</div>
+                  <div class="boarder-message-text"><div class="boarder-message-name">Matthew Aurich says</div>Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span> Hey man just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span>
+                  </div>
+              </div>
+          </li>
+          <li><a class="menu-link" href="messages.html">View All Messages</a></li>
+        </ul>
+      </li>
+
+      <li class="menu-image"><a href=""><span>(1)</span><img id="crowdboard-logo" src="images/crowdboarders.png" /></a>
+        <ul class="notifications-menu">
+          <li>Notifications</li>
+          <li>
+            <span class="new-notification"><span class="new-friend"><a href="">President Obama</a></span> is now friends with <span class="current-user"><a href="">Matthew Aurich</a></span>
+            </span>
+          </li>
+          <li><a class="menu-link" href="#">View All Notifications</a></li>
+        </ul>
+      </li>
+
+         <li class="navbar-responsive"><img src="images/menu.png" />
+        <ul>
+          <li><a class="menu-link" href="index.html">My Console</a></li>
+          <li><a class="menu-link" href="districts.html">All Districts</a></li>
+          <li><a class="menu-link" href="#">Crowd News</a></li>
+          <li><a class="menu-link" href="#">Notifications</a></li>
+          <li><a class="menu-link" href="#">Messages</a></li>
+          <li><a class="menu-link" href="#">Boarder Requests</a></li>
+          <li><a class="menu-link" href="#">Messages</a></li>
+          <li><a class="menu-link" href="#">Search</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+
+  <div class = "container">
+
+    <div class = "main-body">
+      <div class = "title"><a href = "mycrowdboardsproper.html">Back to My CrowdBoards</a><span>CrowdBoard Name</span>
+        <div class = "navigational-links">
+          <a href = "editcrowdboard/editcrowdboardbasic.html">Edit</a>
+          <a href = "managecrowdboard/managecrowdboardanalytics.html">Manage</a>
+          <a href = "updateboarders.html">Updates</a>
+        </div>
+      </div>
+    </div>
+    <div class = "update-container">
+      <div class = "update-navigation">
+        <a href = "updateboarders.html">Update Boarders</a>
+        <a href = "updateboardersin.html">BoardersIn</a>
+        <a href = "updateboarderswatching.html">Boarders Watching</a>
+      </div>
+      <div class = "title">Updates</div>
+      <div class = "left-column">
+        <div class="profile-picture">
+          <a href=""><img src="images/selfportrait.png" /></a>
+        </div>
+        <div id="boarder-name">Matthew Kyle Aurich the First</div>
+          <textarea placeholder = "Post an update to your BoardersIn..."></textarea>
+          <input type= "button" value="Post" id="post-button" />
+          <input type= "button" value="Add File" id="attach-button"/>
+        </form>   
+      </div>
+      <div class = "right-column">
+        <div class="crowdnews-post">
+            <div class="posted-material">
+              <a href=""><img src="images/Georgie.jpg" /></a>
+              <div class="poster-options">
+                <a href="#" class="comment-img"><img src="images/comment.png" /><div class="comment-number">(1)</div></a>
+                <a href="#" class="recommend-img"><img src="images/recommend.png" /><div class="recommend-number">(2)</div></a>
+                <a href="#" class="boost-img"><img src="images/boost.png" /><div class="boost-number">(3)</div></a>
+              </div>
+              <div class="poster-name">Matt Aurich says:</div>
+              <div class="poster-comment">Hey guys just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span>
+              </div>
+              <div class="time-stamp">06/24/2014</div>
+            </div>
+          </div>
+
+          <div class="crowdnews-post">
+            <div class="posted-material">
+              <a href=""><img src="images/Georgie.jpg" /></a>
+              <div class="poster-options">
+                <a href="#" class="comment-img"><img src="images/comment.png" /><div class="comment-number">(1)</div></a>
+                <a href="#" class="recommend-img"><img src="images/recommend.png" /><div class="recommend-number">(2)</div></a>
+                <a href="#" class="boost-img"><img src="images/boost.png" /><div class="boost-number">(3)</div></a>
+              </div>
+              <div class="poster-name">Matt Aurich says:</div>
+              <div class="poster-comment">Hey guys just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span>
+              </div>
+              <div class="time-stamp">06/24/2014</div>
+            </div>
+          </div>
+
+          <div class="crowdnews-post">
+            <div class="posted-material">
+              <a href=""><img src="images/Georgie.jpg" /></a>
+              <div class="poster-options">
+                <a href="#" class="comment-img"><img src="images/comment.png" /><div class="comment-number">(1)</div></a>
+                <a href="#" class="recommend-img"><img src="images/recommend.png" /><div class="recommend-number">(2)</div></a>
+                <a href="#" class="boost-img"><img src="images/boost.png" /><div class="boost-number">(3)</div></a>
+              </div>
+              <div class="poster-name">Matt Aurich says:</div>
+              <div class="poster-comment">Hey guys just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span>
+              </div>
+              <div class="time-stamp">06/24/2014</div>
+            </div>
+          </div>
+
+          <div class="crowdnews-post">
+            <div class="posted-material">
+              <a href=""><img src="images/Georgie.jpg" /></a>
+              <div class="poster-options">
+                <a href="#" class="comment-img"><img src="images/comment.png" /><div class="comment-number">(1)</div></a>
+                <a href="#" class="recommend-img"><img src="images/recommend.png" /><div class="recommend-number">(2)</div></a>
+                <a href="#" class="boost-img"><img src="images/boost.png" /><div class="boost-number">(3)</div></a>
+              </div>
+              <div class="poster-name">Matt Aurich says:</div>
+              <div class="poster-comment">Hey guys just wanted to let you know to check out my <span class="district-tag"><a href='#'>@mkcrowdboard</a></span> in <span class="district-tag"><a href="">@businessdistrict</a></span> in the <span class="area-tag"><a href="#">@technologyarea</a></span>
+              </div>
+              <div class="time-stamp">06/24/2014</div>
+            </div>
+          </div>
+
+      </div>
+    
+    </div>
+
+  </div>
+
+
+
+  <script src="jQuery/jquery.js"></script>
+
+  <script src="scripts/navbar.js"></script>
+
+</body>
+</html>
